@@ -1,6 +1,2 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
+# Sublime Text - SFTP Plugin
+sftp-config.json

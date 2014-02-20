@@ -6,6 +6,7 @@ Tested up to: WP 3.8
 
 Author: Kevin Legrand
 Author URI: http://k-legrand.fr/
+Github URI: https://github.com/Manoz/split-me
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl.html
 -------------------------------------------------------

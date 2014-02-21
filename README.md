@@ -44,6 +44,9 @@ For questions, comments or bug reports, please go to WordPress forums (http://wo
 
 ### Changelog
 
+### 1.0.2 - 21.02.2014
+* Add /lang and French translation
+
 ### 1.0.1 - 21.02.2014
 * Fix get_header(); and get_footer();
 * Fix wp_title()

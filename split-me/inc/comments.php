@@ -4,7 +4,7 @@
  *
  * @todo Build a better reply link
  * @package Split Me
- * @since Split Me 1.0.1
+ * @since Split Me 1.0.0
  */
 
 if ( ! function_exists( 'sme_comment' ) ) :

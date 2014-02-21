@@ -1,6 +1,6 @@
 Theme Name: Split Me
 Theme URI: http://manoz.github.io/split-me/
-Version: 1.0.0
+Version: 1.0.2
 Requires at least: WP 3.6
 Tested up to: WP 3.8
 
@@ -45,6 +45,9 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 For questions, comments or bug reports, please go to WordPress forums (http://wordpress.org/support/).
 
 == Changelog ==
+
+= 1.0.2 - 21.02.2014 =
+* Add /lang and French translation
 
 = 1.0.1 - 21.02.2014 =
 * Fix get_header(); and get_footer();

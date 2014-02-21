@@ -3,7 +3,7 @@
  * Global searchform
  *
  * @package Split Me
- * @since Split Me 1.0.1
+ * @since Split Me 1.0.0
  */
 ?>
 <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">

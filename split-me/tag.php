@@ -4,7 +4,7 @@
  * Used to display archive-type pages for posts in a tag.
  *
  * @package Split Me
- * @since Split Me 1.0.1
+ * @since Split Me 1.0.0
  */
 
 get_header(); ?>

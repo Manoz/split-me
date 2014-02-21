@@ -11,7 +11,7 @@
  * Don't use 'sme_your_function()' to avoid conflicts \o/
  *
  * @package Split Me
- * @since Split Me 1.0.1
+ * @since Split Me 1.0.0
  */
 
 require_once locate_template('/inc/init.php');          // Lang, nav and some theme support

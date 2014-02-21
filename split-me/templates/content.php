@@ -3,7 +3,7 @@
  * Default template for content.
  *
  * @package Split Me
- * @since Split Me 1.0.1
+ * @since Split Me 1.0.0
  */
 
 if ( !is_singular() ) :

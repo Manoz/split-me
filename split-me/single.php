@@ -3,7 +3,7 @@
  * The Template for displaying all single posts
  *
  * @package Split Me
- * @since Split Me 1.0.1
+ * @since Split Me 1.0.0
  */
 
 get_header();

@@ -3,7 +3,7 @@
  * Template used if there is no post
  *
  * @package Split Me
- * @since Split Me 1.0.1
+ * @since Split Me 1.0.0
  */
 ?>
 <div class="empty-content">

@@ -3,7 +3,7 @@
  * Template for Author Archive pages
  *
  * @package Split Me
- * @since Split Me 1.0.1
+ * @since Split Me 1.0.0
  */
 get_header();
 

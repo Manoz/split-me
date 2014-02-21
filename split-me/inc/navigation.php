@@ -7,7 +7,7 @@
  * We do not need as many classes. And it's ugly >_<
  *
  * @package Split Me
- * @since Split Me 1.0.1
+ * @since Split Me 1.0.0
  */
 
 class SME_Nav_Walker extends Walker_Nav_Menu {

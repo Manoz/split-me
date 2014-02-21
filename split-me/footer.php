@@ -3,7 +3,7 @@
  * Split Me Footer
  *
  * @package Split Me
- * @since Split Me 1.0.1
+ * @since Split Me 1.0.0
  */
 ?>
     </div>

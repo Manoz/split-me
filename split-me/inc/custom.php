@@ -6,7 +6,7 @@
  * Add them in this file instead :)
  *
  * @package Split Me
- * @since Split Me 1.0.1
+ * @since Split Me 1.0.0
  */
 
 function your_function_name() {

@@ -3,7 +3,7 @@
  * Custom pagination function
  *
  * @package Split Me
- * @since Split Me 1.0.1
+ * @since Split Me 1.0.0
  */
 function sme_pagination($pages = '', $range = 4) {
      $showitems = ($range * 2)+1;

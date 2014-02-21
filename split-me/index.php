@@ -3,10 +3,10 @@
  * Main template file.
  *
  * @package Split Me
- * @since Split Me 1.0.0
+ * @since Split Me 1.0.1
  */
 
-get_template_part( 'templates/header' ); ?>
+get_header(); ?>
 
 <ul class="post-list">
 <?php
@@ -34,4 +34,4 @@ get_template_part( 'templates/header' ); ?>
 </div>
 
 <?php
-get_template_part( 'templates/footer' );
+get_footer();

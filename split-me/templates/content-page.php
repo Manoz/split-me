@@ -3,7 +3,7 @@
  * Template for pages content
  *
  * @package Split Me
- * @since Split Me 1.0.0
+ * @since Split Me 1.0.1
  */
 ?>
 <article <?php post_class(); ?>>

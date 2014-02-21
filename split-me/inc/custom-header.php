@@ -3,20 +3,8 @@
  * Custom header functions
  *
  * @package Split Me
- * @since Split Me 1.0.0
+ * @since Split Me 1.0.1
  */
-
-/**
- * Add custom header image support
- * @since 1.0.0
- */
-$sme_custom_header = array(
-    'width'         => 810,
-    'height'        => 810,
-    'default-image' => get_template_directory_uri() . '/images/default-header.jpg',
-    'uploads'       => true,
-);
-add_theme_support( 'custom-header', $sme_custom_header );
 
 /**
  * Add a <style> tag for the custom header image.

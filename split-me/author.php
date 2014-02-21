@@ -3,9 +3,9 @@
  * Template for Author Archive pages
  *
  * @package Split Me
- * @since Split Me 1.0.0
+ * @since Split Me 1.0.1
  */
-get_template_part('templates/header');
+get_header();
 
 if ( have_posts() ) :
 
@@ -58,4 +58,4 @@ if ( have_posts() ) :
 
 endif;
 
-get_template_part( 'templates/footer' );
+get_footer();

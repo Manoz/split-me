@@ -20,6 +20,7 @@ Split Me uses:
 * Open Sans font (available through Google web Fonts: http://www.google.com/webfonts/specimen/Open+Sans), licensed under Apache License Version 2 (http://www.apache.org/licenses/LICENSE-2.0.html)
 * A Fontello custom pack for the icon font (http://fontello.com)
 * Modernizr (http://modernizr.com/) script licensed under MIT license (www.modernizr.com/license/)
+* Default header image (kittens): http://placekitten.com/
 
 ========= Installation =========
 
@@ -44,6 +45,20 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 For questions, comments or bug reports, please go to WordPress forums (http://wordpress.org/support/).
 
 == Changelog ==
+
+= 1.0.1 - 21.02.2014 =
+* Fix get_header(); and get_footer();
+* Fix wp_title()
+* Remove favicon (temporary)
+* Fix home_url();
+* Remove all remove_action() calls
+* Fix protocol for google webfont
+* Fix wp_enqueue_script( 'jquery' );
+* Fix all add_theme_support. They're now in the after_setup_theme action.
+* Fix prefix for all functions
+* Fix credits links
+* Add new theme URI
+* Add copyrights for kitten images
 
 = 1.0.0 - 20.02.2014 =
 * Initial release \o/

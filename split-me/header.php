@@ -3,7 +3,7 @@
  * Split Me Header
  *
  * @package Split Me
- * @since Split Me 1.0.0
+ * @since Split Me 1.0.1
  */
 ?>
 <!DOCTYPE HTML>
@@ -12,24 +12,8 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width" />
 
-    <title><?php
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
 
-    global $page, $paged;
-
-    wp_title( '|', true, 'right' );
-
-    bloginfo( 'name' );
-
-    $site_description = get_bloginfo( 'description', 'display' );
-    if ( $site_description && ( is_home() || is_front_page() ) )
-    echo " | $site_description";
-
-    if ( $paged >= 2 || $page >= 2 )
-    echo ' | ' . sprintf( __( 'Page %s', 'splitme' ), max( $paged, $page ) );
-
-    ?></title>
-
-    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.png" >
     <link rel="profile" href="http://gmpg.org/xfn/11" >
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" >
 
@@ -48,7 +32,7 @@
                     <div class="menu-icn"></div>
                 </div>
             </div>
-            <h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
             <h2 class="site-desc"><?php bloginfo('description'); ?></h2>
             <div class="sm-nav">
                 <?php

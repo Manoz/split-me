@@ -3,10 +3,10 @@
  * The Template for displaying all single posts
  *
  * @package Split Me
- * @since Split Me 1.0.0
+ * @since Split Me 1.0.1
  */
 
-get_template_part('templates/header');
+get_header();
 
 while ( have_posts() ) : the_post();
 
@@ -25,4 +25,4 @@ while ( have_posts() ) : the_post();
 
 endwhile;
 
-get_template_part('templates/footer');
+get_footer();

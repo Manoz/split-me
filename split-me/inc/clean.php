@@ -3,58 +3,10 @@
  * Clean wp_head()
  *
  * @package Split Me
- * @since Split Me 1.0.0
+ * @since Split Me 1.0.1
  *
- * Remove feed links
- * Remove extra feed links
- * Remove RSD & Windows Live Writer links
- * Remove WP version
- * Remove nav links
  */
 
-function sme_clean_head() {
-    // Originally from http://wpengineer.com/1438/wordpress-header/
-    remove_action('wp_head', 'feed_links', 2);
-    remove_action('wp_head', 'feed_links_extra', 3);
-    remove_action('wp_head', 'rsd_link');
-    remove_action('wp_head', 'wlwmanifest_link');
-    remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
-    remove_action('wp_head', 'wp_generator');
-    remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
-
-    global $wp_widget_factory;
-    remove_action('wp_head', array(
-        $wp_widget_factory->widgets['WP_Widget_Recent_Comments'],
-        'recent_comments_style'
-        )
-    );
-
-    if (!class_exists('WPSEO_Frontend')) {
-        remove_action('wp_head', 'rel_canonical');
-        add_action('wp_head', 'sme_rel_canonical');
-    }
-}
-
-function sme_rel_canonical() {
-    global $wp_the_query;
-
-    if (!is_singular()) {
-        return;
-    }
-
-    if (!$id = $wp_the_query->get_queried_object_id()) {
-        return;
-    }
-
-    $link = get_permalink($id);
-    echo "\t<link rel=\"canonical\" href=\"$link\">\n";
-}
-add_action('init', 'sme_clean_head');
-
-/**
- * Remove the WordPress version from RSS feeds
- */
-add_filter('the_generator', '__return_false');
 
 /**
  * Clean up language_attributes() used in <html> tag
@@ -149,7 +101,7 @@ function sme_nice_search() {
 
   $search_base = $wp_rewrite->search_base;
   if (is_search() && !is_admin() && strpos($_SERVER['REQUEST_URI'], "/{$search_base}/") === false) {
-    wp_redirect(home_url("/{$search_base}/" . urlencode(get_query_var('s'))));
+    wp_redirect(esc_url( home_url( "/{$search_base}/" . urlencode( get_query_var( 's' ) ) ) ) );
     exit();
   }
 }

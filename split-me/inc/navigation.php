@@ -7,7 +7,7 @@
  * We do not need as many classes. And it's ugly >_<
  *
  * @package Split Me
- * @since Split Me 1.0.0
+ * @since Split Me 1.0.1
  */
 
 class SME_Nav_Walker extends Walker_Nav_Menu {
@@ -47,7 +47,7 @@ function sme_menu_css_class($classes, $item) {
 
     $classes = array_unique($classes);
 
-    return array_filter($classes, 'is_element_empty');
+    return array_filter($classes, 'sme_is_element_empty');
 }
 add_filter('nav_menu_css_class', 'sme_menu_css_class', 10, 2);
 add_filter('nav_menu_item_id', '__return_null');

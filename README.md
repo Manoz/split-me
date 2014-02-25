@@ -5,9 +5,10 @@ Split Me is a simple minimal WordPress theme wich contains no sidebar, no slider
 
 Split Me uses:
 * Open Sans font (available through Google web Fonts: http://www.google.com/webfonts/specimen/Open+Sans), licensed under Apache License Version 2 (http://www.apache.org/licenses/LICENSE-2.0.html)
-* A Fontello custom pack for the icon font (http://fontello.com)
+* A Fontello custom pack for the icon font with only "Font Awesome" (http://fontello.com), licensed under SIL OFL 1.1 (http://scripts.sil.org/OFL)
 * Modernizr (http://modernizr.com/) script licensed under MIT license (www.modernizr.com/license/)
-* Default header image (kittens): http://placekitten.com/
+* Image /images/default-header.jpg (http://commons.wikimedia.org/wiki/File:Six_weeks_old_cat_(aka).jpg) is licensed under CC BY-SA 2.5 (http://creativecommons.org/licenses/by-sa/2.5/legalcode)
+* Image /images/default-header-2.jpg (http://commons.wikimedia.org/wiki/File:Kitten_(06)_by_Ron.jpg) is released into the public domain.
 
 ## Screenshots
 
@@ -43,6 +44,12 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 For questions, comments or bug reports, please go to WordPress forums (http://wordpress.org/support/).
 
 ### Changelog
+
+### 1.0.3 - 25.02.2014
+* Remove /inc/clean.php
+* Remove 'nice search' tweak from /inc/tweaks.php
+* Add Icon Font License in readme.txt
+* Add defaut header images credits
 
 ### 1.0.2 - 21.02.2014
 * Add /lang and French translation

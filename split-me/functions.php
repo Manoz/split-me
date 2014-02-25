@@ -19,7 +19,6 @@ require_once locate_template('/inc/theme-setup.php');   // Theme config (excerpt
 require_once locate_template('/inc/scripts.php');       // Scripts and stylesheets
 require_once locate_template('/inc/tweaks.php');        // Tweaks and utils
 require_once locate_template('/inc/comments.php');      // Custom comments template
-require_once locate_template('/inc/clean.php');         // Clean stuff for wp_head(), search, dashboard, ...
 require_once locate_template('/inc/custom-header.php'); // Custom header stuff
 require_once locate_template('/inc/navigation.php');    // Custom walker for better wp_nav_menu
 require_once locate_template('/inc/pagination.php');    // Custom walker for better wp_nav_menu

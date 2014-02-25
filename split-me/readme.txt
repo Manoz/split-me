@@ -1,6 +1,6 @@
 Theme Name: Split Me
 Theme URI: http://manoz.github.io/split-me/
-Version: 1.0.2
+Version: 1.0.3
 Requires at least: WP 3.6
 Tested up to: WP 3.8
 
@@ -11,16 +11,17 @@ License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl.html
 -------------------------------------------------------
 Split Me WordPress Theme, Copyright 2014 k-legrand.fr
-The Sugar and Spice theme is distributed under the terms of the GNU GPL
+Split Me is distributed under the terms of the GNU GPL
 -------------------------------------------------------
 
 ========= Credits =========
 
 Split Me uses:
 * Open Sans font (available through Google web Fonts: http://www.google.com/webfonts/specimen/Open+Sans), licensed under Apache License Version 2 (http://www.apache.org/licenses/LICENSE-2.0.html)
-* A Fontello custom pack for the icon font (http://fontello.com)
+* A Fontello custom pack for the icon font with only "Font Awesome" (http://fontello.com), licensed under SIL OFL 1.1 (http://scripts.sil.org/OFL)
 * Modernizr (http://modernizr.com/) script licensed under MIT license (www.modernizr.com/license/)
-* Default header image (kittens): http://placekitten.com/
+* Image /images/default-header.jpg (http://commons.wikimedia.org/wiki/File:Six_weeks_old_cat_(aka).jpg) is licensed under CC BY-SA 2.5 (http://creativecommons.org/licenses/by-sa/2.5/legalcode)
+* Image /images/default-header-2.jpg (http://commons.wikimedia.org/wiki/File:Kitten_(06)_by_Ron.jpg) is released into the public domain.
 
 ========= Installation =========
 
@@ -37,7 +38,7 @@ The only options are those available natively in WordPress:
 
 Also, the theme has no sidebar and the thumbnails are not displayed in a <img> tag. That's why "Theme Check" will not find the_post_thumbnail() because it's not needed. Read below for the thumbnails.
 
-If you set a thumbnail on your post, it will be displayed in the large box on the left. You need to choose a thumbnail size, minimum 800x800 pixels. 
+If you set a thumbnail on your post, it will be displayed in the large box on the left. You need to choose a thumbnail size, minimum 800x800 pixels.
 If you do not set a thumbnail, the image that you have set in "custom-header" will be displayed.
 
 ========= Support =========
@@ -45,6 +46,12 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 For questions, comments or bug reports, please go to WordPress forums (http://wordpress.org/support/).
 
 == Changelog ==
+
+= 1.0.3 - 25.02.2014 =
+* Remove /inc/clean.php
+* Remove 'nice search' tweak from /inc/tweaks.php
+* Add Icon Font License in readme.txt
+* Add defaut header images credits
 
 = 1.0.2 - 21.02.2014 =
 * Add /lang and French translation

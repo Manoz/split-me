@@ -17,14 +17,6 @@ function sme_setup() {
     add_theme_support( 'automatic-feed-links' );
     add_theme_support( 'post-thumbnails' );
 
-
-    /**
-     * Add nice search tweak.
-     * See /inc/clean.php line 96
-     * @since 1.0.0
-     */
-    add_theme_support( 'nice-search' );
-
     // Add post formats
     add_theme_support( 'post-formats', array(
         'audio', 'aside', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video'

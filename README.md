@@ -3,6 +3,8 @@ Split Me
 
 ### Version 1.0.4
 
+**Available here:** https://wordpress.org/themes/split-me
+
 Split Me is a simple minimal WordPress theme wich contains no sidebar, no slider, just a simple menu and a large area for your thumbnails. It was inspired by medium.com
 
 Split Me uses:

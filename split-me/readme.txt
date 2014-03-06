@@ -1,6 +1,6 @@
 Theme Name: Split Me
 Theme URI: http://manoz.github.io/split-me/
-Version: 1.0.5
+Version: 1.0.4
 Requires at least: WP 3.6
 Tested up to: WP 3.8
 
@@ -29,10 +29,6 @@ You can install the theme through the WordPress installer under "Themes" > "Inst
 Alternatively you can download the file, unzip it and move the unzipped contents to the "wp-content/themes" folder
 of your WordPress installation. You will then be able to activate the theme.
 
-========= Updates =========
-
-Be careful to save your /inc/custom.php file before updating the theme.
-
 ========= Instructions =========
 
 Split Me has no options because it does not seem necessary.
@@ -50,10 +46,6 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 For questions, comments or bug reports, please go to WordPress forums (http://wordpress.org/support/).
 
 == Changelog ==
-
-= 1.0.5 - 06.03.2014 =
-* Removed 'accessibility-ready' tag since this theme is not accessibility-ready yet :( I'll work on it in the next update.
-* Add an "Updates" section in readme.txt
 
 = 1.0.4 - 02.03.2014 =
 * Remove /inc/clean.php

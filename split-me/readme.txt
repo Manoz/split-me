@@ -1,6 +1,6 @@
 Theme Name: Split Me
 Theme URI: http://manoz.github.io/split-me/
-Version: 1.0.3
+Version: 1.0.5
 Requires at least: WP 3.6
 Tested up to: WP 3.8
 
@@ -20,7 +20,7 @@ Split Me uses:
 * Open Sans font (available through Google web Fonts: http://www.google.com/webfonts/specimen/Open+Sans), licensed under Apache License Version 2 (http://www.apache.org/licenses/LICENSE-2.0.html)
 * A Fontello custom pack for the icon font with only "Font Awesome" (http://fontello.com), licensed under SIL OFL 1.1 (http://scripts.sil.org/OFL)
 * Modernizr (http://modernizr.com/) script licensed under MIT license (www.modernizr.com/license/)
-* Image /images/default-header.jpg (http://commons.wikimedia.org/wiki/File:Six_weeks_old_cat_(aka).jpg) is licensed under CC BY-SA 2.5 (http://creativecommons.org/licenses/by-sa/2.5/legalcode)
+* Image /images/default-header.jpg (http://pixabay.com/fr/pin-for%C3%AAt-coussin-clairi%C3%A8re-misty-273826/) is released into the public domain.
 * Image /images/default-header-2.jpg (http://commons.wikimedia.org/wiki/File:Kitten_(06)_by_Ron.jpg) is released into the public domain.
 
 ========= Installation =========
@@ -28,6 +28,10 @@ Split Me uses:
 You can install the theme through the WordPress installer under "Themes" > "Install themes" by searching for it.
 Alternatively you can download the file, unzip it and move the unzipped contents to the "wp-content/themes" folder
 of your WordPress installation. You will then be able to activate the theme.
+
+========= Updates =========
+
+Be careful to save your /inc/custom.php file before updating the theme.
 
 ========= Instructions =========
 
@@ -46,6 +50,16 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 For questions, comments or bug reports, please go to WordPress forums (http://wordpress.org/support/).
 
 == Changelog ==
+
+= 1.0.5 - 06.03.2014 =
+* Removed 'accessibility-ready' tag since this theme is not accessibility-ready yet :( I'll work on it in the next update.
+* Add an "Updates" section in readme.txt
+
+= 1.0.4 - 02.03.2014 =
+* Remove /inc/clean.php
+* Update /images/default-header.jpg
+* Update screenshot.png
+* Change /css/main.css version
 
 = 1.0.3 - 25.02.2014 =
 * Remove /inc/clean.php

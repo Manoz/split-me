@@ -12,12 +12,12 @@
  */
 function sme_add_style_custom_header() {
     if ( is_home() || is_search() || is_404() or !has_post_thumbnail() ) {
-        $img_h = get_header_image();
+        $img = get_header_image();
         $custom_css = "
     .sm-inner-h {
         background: linear-gradient(
             to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 30%),
-            url('{$img_h}');
+            url('{$img}');
         background-position: center 30%;
         -webkit-background-size: cover;
         -moz-background-size: cover;

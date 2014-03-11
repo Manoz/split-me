@@ -11,13 +11,13 @@
  * @since 1.0.0
  */
 function sme_add_style_custom_header() {
-    if ( is_home() || is_search() or !has_post_thumbnail() ) {
-        $img = get_header_image();
+    if ( is_home() || is_search() || is_404() or !has_post_thumbnail() ) {
+        $img_h = get_header_image();
         $custom_css = "
     .sm-inner-h {
         background: linear-gradient(
             to bottom, rgba(0, 0, 0, 0.4) 0%, transparent 30%),
-            url('{$img}');
+            url('{$img_h}');
         background-position: center 30%;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -25,7 +25,7 @@ function sme_add_style_custom_header() {
     }
         ";
     }
-    elseif ( has_post_thumbnail() ) {
+    elseif ( !is_home() && has_post_thumbnail() ) {
         global $post;
         $img = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large' )[0];
         $custom_css = "

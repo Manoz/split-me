@@ -11,7 +11,7 @@
  * @since 1.0.0
  */
 function sme_add_style_custom_header() {
-    if ( is_home() or !has_post_thumbnail() ) {
+    if ( is_home() || is_search() or !has_post_thumbnail() ) {
         $img = get_header_image();
         $custom_css = "
     .sm-inner-h {

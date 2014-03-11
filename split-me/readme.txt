@@ -1,6 +1,6 @@
 Theme Name: Split Me
 Theme URI: http://manoz.github.io/split-me/
-Version: 1.0.5
+Version: 1.0.6
 Requires at least: WP 3.6
 Tested up to: WP 3.8
 
@@ -47,9 +47,15 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 
 ========= Support =========
 
-For questions, comments or bug reports, please go to WordPress forums (http://wordpress.org/support/).
+For questions, comments or bug reports, please go to WordPress forums (http://wordpress.org/support/theme/split-me) or contact me on Twitter @Manoz or also on Github.
 
 == Changelog ==
+
+= 1.0.6 - 11.03.2014 =
+* Lot of css fix
+* Minified /css/a-normalize.css
+* Fix default and french translation
+* Fix the custom_header in search results page.
 
 = 1.0.5 - 06.03.2014 =
 * Removed 'accessibility-ready' tag since this theme is not accessibility-ready yet :( I'll work on it in the next update.

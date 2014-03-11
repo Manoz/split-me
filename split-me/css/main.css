@@ -128,6 +128,7 @@ table {
     border-spacing: 2px;
 }
 
+table, th,
 table thead td,
 table thead th {
     font-weight: 600;
@@ -175,7 +176,7 @@ address {
     line-height: 1.4;
 }
 
-/* cite / code / pre / q
+/* cite / code / pre / q / abbr
 ------------------------------------- */
 cite {
     font-size: 14px;
@@ -224,6 +225,13 @@ ins {
     border-bottom: 1px dotted #BDBDBD;
     text-decoration: none;
     background-color: #fff9c0;
+}
+
+abbr[title], acronym[title] {
+    border-bottom: 1px dashed #ccc;
+    border-color: #d8d8d8;
+    border-color: rgba(0,0,0,.5);
+    cursor: help;
 }
 
 /* =Header
@@ -817,9 +825,10 @@ textarea {
 }
 
 .wp-caption-text {
+    margin: 0;
     padding-top: 10px;
     text-align: center;
     font-size: 13px;
     font-style: italic;
-    color: #888888;
+    color: #888;
 }

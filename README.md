@@ -1,7 +1,7 @@
 Split Me
 ========
 
-### Version 1.0.5
+### Version 1.0.6
 
 **Available here:** https://wordpress.org/themes/split-me
 
@@ -52,6 +52,12 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 For questions, comments or bug reports, please go to WordPress forums (http://wordpress.org/support/).
 
 ### Changelog
+
+### 1.0.6 - 11.03.2014
+* Lot of css fix
+* Minified /css/a-normalize.css
+* Fix default and french translation
+* Fix the custom_header in search results page.
 
 ### 1.0.5 - 06.03.2014
 * Removed 'accessibility-ready' tag since this theme is not accessibility-ready yet :( I'll work on it in the next update.

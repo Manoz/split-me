@@ -49,7 +49,7 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 
 ### Support
 
-For questions, comments or bug reports, please go to WordPress forums (http://wordpress.org/support/).
+For questions, comments or bug reports, please go to [WordPress forums](http://wordpress.org/support/theme/split-me) or contact me on Twitter [@Manoz](http://www.twitter.com/Manoz) or also on Github.
 
 ### Changelog
 

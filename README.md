@@ -16,10 +16,10 @@ Split Me is a simple minimal WordPress theme wich contains no sidebar, no slider
 
 ## Screenshots
 
-![ScreenShot](https://raw2.github.com/Manoz/split-me/master/screenshots/screen-1.png)
-![ScreenShot](https://raw2.github.com/Manoz/split-me/master/screenshots/screen-2.png)
-![ScreenShot](https://raw2.github.com/Manoz/split-me/master/screenshots/screen-5.png)
-![ScreenShot](https://raw2.github.com/Manoz/split-me/master/screenshots/screen-6.png)
+![ScreenShot](https://raw.githubusercontent.com/Manoz/split-me/master/screenshots/screen-1.png)
+![ScreenShot](https://raw.githubusercontent.com/Manoz/split-me/master/screenshots/screen-2.png)
+![ScreenShot](https://raw.githubusercontent.com/Manoz/split-me/master/screenshots/screen-5.png)
+![ScreenShot](https://raw.githubusercontent.com/Manoz/split-me/master/screenshots/screen-6.png)
 
 ## Demo
 

@@ -2,7 +2,7 @@
 
 /*
  * Main Split Me styles
- * Version: 1.0.7
+ * Version: 1.0.8
 */
 
 /* =Main and global styles
@@ -781,3 +781,22 @@ textarea {
     font-style: italic;
     color: #888;
 }
+
+/* =Media queries @since 1.0.8
+-------------------------------------------------------------------- */
+
+@media (max-width: 959px) {
+    .main {margin-left: 0; padding: 1em; width: 100%;}
+    .sm-inner-h {position: initial; width: 100%; height: auto;}
+    .sm-nav {position: initial; height: auto; font-size: 1.2em;}
+    .sm-f {position: initial; width: 100%;}
+}
+
+/* Not used for now
+@media only screen and (max-device-width : 360px) and (orientation: landscape) {}
+@media only screen and (max-width : 480px) {}
+
+@media all and (-webkit-min-device-pixel-ratio:0) {}
+@media all and (-webkit-min-device-pixel-ratio:0) and (max-width: 959px){}
+@media all and (-webkit-min-device-pixel-ratio:0) and (max-width: 700px){}
+*/

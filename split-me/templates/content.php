@@ -7,6 +7,8 @@
  */
 
 if ( !is_singular() ) :
+$comm = get_comments_number();
+
 ?>
 
 <li <?php post_class('clearfix'); ?> >
@@ -18,6 +20,12 @@ if ( !is_singular() ) :
     <a class="read-more" href="<?php the_permalink(); ?>" title="<?php echo _e( 'Read more', 'splitme' ); ?>"><?php echo _e( 'Read more', 'splitme' ); ?></a>
 
     <div class="metas">
+        <?php if( $comm != 0 ) { ?>
+        <span class="comments">
+            <a href="<?php the_permalink(); ?>#comments"><i class="icn-chat"></i></a>
+        </span>
+        <?php } ?>
+
         <span class="date">
             <i class="icn-calendar" title="<?php _e('Published on ', 'splitme'); echo get_the_date(); ?>">
                 <time class="published" datetime="<?php echo get_the_time('c'); ?>"></time>

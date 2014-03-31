@@ -1,7 +1,7 @@
 Split Me
 ========
 
-### Version 1.0.7
+### Version 1.0.8
 
 **Available here:** https://wordpress.org/themes/split-me
 
@@ -52,6 +52,11 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 For questions, comments or bug reports, please go to [WordPress forums](http://wordpress.org/support/theme/split-me) or contact me on Twitter [@Manoz](http://www.twitter.com/Manoz) or also on Github.
 
 ### Changelog
+
+### 1.0.8 - 31.03.2014
+* Better display on mobile
+* Add an icon on homepage if the post has comments
+* This theme is now able to send kittens on the moon
 
 ### 1.0.7 - 12.03.2014
 * Remove old junk css vendor prefixes

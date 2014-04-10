@@ -2,7 +2,7 @@
 
 /*
  * Main Split Me styles
- * Version: 1.0.8
+ * Version: 2.0
 */
 
 /* =Main and global styles
@@ -710,14 +710,19 @@ textarea {
 .sticky {border: 1px solid #cb4b16;}
 .format-gallery {border: 1px solid #d33682;}
 .format-image {border: 1px solid #73d216;}
-.format-audio {border: 1px solid #268bd2;}
-.format-video {border: 1px solid #586e75;}
+/*.format-audio {border: 1px solid #268bd2;} Temp remove v2.0 */
+/*.format-video {border: 1px solid #586e75;} Temp remove v2.0 */
 .format-aside {border: 1px solid #073642;}
 .format-status {border: 1px solid #3465a4;}
 .format-link {border: 1px solid #6c71c4;}
 .format-quote {border: 1px solid #edd400;}
 .format-chat {border: 1px solid #2aa198;}
 
+/** @since 2.0 */
+.format-video .sm-content iframe {
+    display: block;
+    margin: 10px auto;
+}
 
 /* =Helpers
 -------------------------------------------------------------------- */
@@ -786,10 +791,12 @@ textarea {
 -------------------------------------------------------------------- */
 
 @media (max-width: 959px) {
-    .main {margin-left: 0; padding: 1em; width: 100%;}
+    .main {margin-left: 0; padding: 1em; width: 100% !important;}
     .sm-inner-h {position: initial; width: 100%; height: auto;}
     .sm-nav {position: initial; height: auto; font-size: 1.2em;}
     .sm-f {position: initial; width: 100%;}
+    .sm-top .sm-inner-h {height: auto !important;}
+    .sm-top .sm-nav {height: auto !important;}
 }
 
 /* Not used for now

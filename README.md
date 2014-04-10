@@ -1,7 +1,7 @@
 Split Me
 ========
 
-### Version 1.0.8
+### Version 2.0
 
 **Available here:** https://wordpress.org/themes/split-me
 
@@ -52,6 +52,10 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 For questions, comments or bug reports, please go to [WordPress forums](http://wordpress.org/support/theme/split-me) or contact me on Twitter [@Manoz](http://www.twitter.com/Manoz) or also on Github.
 
 ### Changelog
+
+### 2.0 - 10.04.2014
+* Add a better post format for audio and video posts
+* Add Theme Options (Theme Layout and Analytics ID)
 
 ### 1.0.8 - 31.03.2014
 * Better display on mobile

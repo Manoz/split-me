@@ -34,3 +34,54 @@ function sme_add_style_custom_header() {
         wp_add_inline_style( 'main', sprintf( $custom_css, $img ) );
     }
 }
+
+/**
+ * Output our theme options in a <style> tag
+ * @see /inc/admin.php
+ * @since Split Me 2.0
+*/
+add_action( 'wp_enqueue_scripts', 'sme_add_style_theme_layout' );
+function sme_add_style_theme_layout() {
+    global $options;
+    $option = get_option( 'sme_options' );
+
+    if( $option['sme_layout'] == 'top' ) {
+        $layout_css = "
+    .sm-inner-h {
+        position: initial;
+        width: 100%;
+        height: 350px;
+    }
+
+    .sm-nav {
+        height: 350px;
+    }
+
+    .site-title,
+    .site-desc {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .main {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .sm-f {
+        position: initial;
+        width: 100%;
+        text-align: center;
+        text-shadow: none;
+        color: #657b83;
+        background: none;
+        background-color: #f5efde;
+        background-color: rgba(0,0,0,.02);
+    }
+
+    .sm-f a {color: #3465a4;}
+
+        ";
+        wp_add_inline_style( 'main', $layout_css );
+    }
+}

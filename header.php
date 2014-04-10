@@ -24,8 +24,11 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
-    <header class="sm-h" role="banner">
+    <?php
+        $options = get_option( 'sme_options' );
+        $layout  = $options['sme_layout'];
+    ?>
+    <header class="sm-h <?php if( $layout == 'top') {echo 'sm-top'; } ?>" role="banner">
         <div class="sm-inner-h">
             <div class="sm-icn">
                 <div class="menu-icn-wrap">

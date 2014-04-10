@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/*
+ * Admin Split Me styles
+ * Version: 2.0
+*/
+.toplevel_page_sme-edit-options .dashicons:before {text-shadow: 1px 1px 1px rgba(0,0,0,.4);color: #67B3FF !important;}
+.sme-layout input,.sme-layout input:focus {width: 200px;height: 150px;margin: 0 !important;padding: 0 !important;border: 1px solid transparent;border-radius: 0;opacity: .3;box-shadow: none;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;filter: alpha(opacity=30);}
+.sme-layout input[type=radio]:checked {opacity: 1;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;}
+.sme-layout input[type=radio]:checked:before {display: none;}
+.sme-layout input[value=left] {background: transparent url(../images/layout-1.png);}
+.sme-layout input[value=top] {background: transparent url(../images/layout-2.png);}
+.sme-layout {float: left;}

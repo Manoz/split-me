@@ -1,7 +1,7 @@
 Split Me
 ========
 
-### Version 2.2
+### Version 2.3
 
 **Available here:** https://wordpress.org/themes/split-me
 
@@ -53,7 +53,7 @@ For questions, comments or bug reports, please go to [WordPress forums](http://w
 
 ### Changelog
 
-### 2.2 - 10.04.2014
+### 2.3 - 10.04.2014
 * Add a better post format for audio and video posts
 * Add Theme Options (Theme Layout)
 

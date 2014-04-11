@@ -1,6 +1,6 @@
 Theme Name: Split Me
 Theme URI: http://manoz.github.io/split-me/
-Version: 2.0
+Version: 2.2
 Requires at least: WP 3.6
 Tested up to: WP 3.8
 
@@ -51,9 +51,9 @@ For questions, comments or bug reports, please go to WordPress forums (http://wo
 
 == Changelog ==
 
-= 2.0 - 10.04.2014 =
+= 2.2 - 10.04.2014 =
 * Add a better post format for audio and video posts
-* Add Theme Options (Theme Layout and Analytics ID)
+* Add Theme Options (Theme Layout)
 
 = 1.0.8 - 31.03.2014 =
 * Better display on mobile

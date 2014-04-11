@@ -35,10 +35,10 @@ function sme_init_options() {
 
     // Add our settings group
     add_settings_section(
-        'general',          // Unique identifier
-        '',                 // Section title (not needed)
-        '__return_false',   // Section callback (not needed)
-        'sme_theme_options' // Menu slug
+        'general',                           // Unique identifier
+        __( 'General settings', 'splitme' ), // Section title (not needed)
+        'sme_useless_callback',              // Section callback (not needed)
+        'sme_theme_options'                  // Menu slug
     );
 
     // Register our settings fields
@@ -49,15 +49,6 @@ function sme_init_options() {
         'sme_layout_field',              // Function
         'sme_theme_options',             // Menu slug
         'general'                        // Settings section
-    );
-
-    // Analytics ID
-    add_settings_field(
-        'sme_analytics_id',
-        __( 'Google Analytics ID', 'splitme' ),
-        'sme_analytics_field',
-        'sme_theme_options',
-        'general'
     );
 }
 add_action( 'admin_init', 'sme_init_options' );
@@ -79,11 +70,13 @@ function sme_layout_option() {
     $args = array(
         'left' => array(
             'value' => 'left',
-            'label' => __( 'Left', 'splitme' )
+            'label' => __( 'Left', 'splitme' ),
+            'id'    => 'sme-l-left'
         ),
         'top' => array(
             'value' => 'top',
-            'label' => __( 'Top', 'splitme' )
+            'label' => __( 'Top', 'splitme' ),
+            'id'    => 'sme-l-top'
         )
     );
     return apply_filters( 'sme_layout_option', $args );
@@ -96,8 +89,8 @@ function sme_layout_option() {
 function sme_get_options() {
     $saved    = (array) get_option( 'sme_options' );
     $defaults = array(
-        'sme_analytics_id' => '',
-        'sme_layout'       => '',
+        // This array will be used in futur theme options
+        'sme_layout'       => ''
     );
 
     $defaults = apply_filters( 'sme_default_options', $defaults );
@@ -105,6 +98,20 @@ function sme_get_options() {
     $options  = array_intersect_key( $options, $defaults );
 
     return $options;
+}
+
+/**
+ * Useless callback for the section groupe.
+ * @since Split Me 2.0
+*/
+function sme_useless_callback() {
+?>
+
+    <p>
+        <?php _e( 'This is the general settings section. This paragraph (and the title above) seems to be required for the <em>WordPress Theme Review Team</em>, even if it is useless. So, there it is. <br> You can change your theme layout by clicking on the images.', 'splitme' ); ?>
+    </p>
+
+<?php
 }
 
 /**
@@ -117,22 +124,11 @@ function sme_layout_field() {
     foreach ( sme_layout_option() as $button ) {
     ?>
     <div class="layout sme-layout">
-        <input type="radio" name="sme_options[sme_layout]" value="<?php echo esc_attr( $button['value'] ); ?>" <?php checked( $options['sme_layout'], $button['value'] ); ?> />
+        <input id="<?php echo esc_attr( $button['id'] ); ?>" type="radio" name="sme_options[sme_layout]" value="<?php echo esc_attr( $button['value'] ); ?>" <?php checked( $options['sme_layout'], $button['value'] ); ?> />
+        <label title="<?php echo esc_attr( $button['label'] ); ?>" for="<?php echo esc_attr( $button['id'] ); ?>"></label>
     </div>
     <?php
     }
-}
-
-/**
- * Render the Analytics ID field
- * @since Split Me 2.0
-*/
-function sme_analytics_field() {
-    $options = sme_get_options();
-    ?>
-    <input type="text" name="sme_options[sme_analytics_id]" placeholder="UA-XXXXXXXX-X" id="analytics-input" value="<?php echo esc_attr( $options['sme_analytics_id'] ); ?>" />
-    <label class="description" for="analytics-input"><?php _e( 'Enter your analytics ID. Leave blank to disable', 'splitme' ); ?></label>
-    <?php
 }
 
 /**
@@ -147,7 +143,7 @@ function sme_options_page() {
         <?php settings_errors(); ?>
 
         <p>
-            <?php _e( 'Hello and welcome to your theme options :&#41; <br /> There are only two options at the moment but I\'m working on other interesting options like some "color scheme" choices. <br />Feel free to suggest me the options or features that you would like to have in this theme. You can ask me on <a target="_blank" href="http://twitter.com/Manoz">Twitter</a> (in French or English) on <a target="_blank" href="https://github.com/Manoz/split-me">Github</a> or in the <a target="_blank" href="http://wordpress.org/support/theme/split-me">WordPress Theme Forums</a>.', 'splitme' ) ?>
+            <?php _e( 'Hello and welcome to your theme options :&#41; <br /> There are only one option at the moment but I\'m working on other interesting options like some "color scheme" choices. <br />Feel free to suggest me the options or features that you would like to have in this theme. You can ask me on <a target="_blank" href="http://twitter.com/Manoz">Twitter</a> (in French or English) on <a target="_blank" href="https://github.com/Manoz/split-me">Github</a> or in the <a target="_blank" href="http://wordpress.org/support/theme/split-me">WordPress Theme Forums</a>.', 'splitme' ) ?>
         </p>
 
         <form method="post" action="options.php">
@@ -172,52 +168,17 @@ function sme_validate_options( $input ) {
     if ( isset( $input['sme_layout'] ) && array_key_exists( $input['sme_layout'], sme_layout_option() ) )
         $output['sme_layout'] = $input['sme_layout'];
 
-    /** No HTML tags in our Analytics ID field */
-    if ( isset( $input['sme_analytics_id'] ) && ! empty( $input['sme_analytics_id'] ) )
-        $output['sme_analytics_id'] = wp_filter_nohtml_kses( $input['sme_analytics_id'] );
-
     return apply_filters( 'sme_validate_options', $output, $input );
 }
 
 /**
- * Register and hook our admin css
+ * Register and hook our admin css on our theme options page only
  * @since Split Me 2.0
 */
 add_action( 'admin_enqueue_scripts', 'sme_admin_styles' );
 function sme_admin_styles() {
-    wp_register_style( 'sme-admin-style', get_template_directory_uri() . '/css/sme-options.css', false, '2.0' );
-    wp_enqueue_style( 'sme-admin-style' );
-}
-
-/**
- * Register our dashboard widget
- * @since Split Me 2.0
-*/
-
-add_action( 'wp_dashboard_setup', 'sme_dashboard_widget' );
-function sme_dashboard_widget() {
-    global $wp_meta_boxes;
-    add_meta_box(
-        'custom_help_widget',
-        __( 'Welcome buddy!', 'splitme' ),
-        'sme_dashboard_help',
-        'dashboard',
-        'normal',
-        'high'
-    );
-}
-
-// Dashboard widget content
-function sme_dashboard_help() {
-    _e( '<p>
-        <a href="http://k-legrand.fr/" target="_blank"><img src="'.get_template_directory_uri().'/images/manoz.jpg" style="float: left; margin-right: 15px;" /></a>
-        <span style="font-weight: bold; color: #777;">Thank you for choosing my theme :&#41;</span><br><br>
-        You make me happy (really) and you motivate me to create more themes. <br>
-        If something is not working properly, do not hesitate to <a href="mailto:manoz@outlook.com" target="_blank">contact me</a> to receive help.
-    </p>', 'splitme' );
-
-    _e( '<p>If you want some news about my themes, you can follow me on <a target="_blank" href="http://www.twitter.com/Manoz">Twitter</a>.</p>', 'splitme' );
-
-    _e( '<p>Thank you again, I hope you will appreciate this theme :&#39;&#41;<br><a style="font-weight: bold; color: #738ac7;" href="http://k-legrand.fr/" target="_blank">Manoz</a>.</p>', 'splitme' );
-
+    if( $_GET['page'] == 'sme-edit-options' AND is_admin() ) {
+        wp_register_style( 'sme-admin-style', get_template_directory_uri() . '/css/sme-options.css', false, '2.0' );
+        wp_enqueue_style( 'sme-admin-style' );
+    }
 }

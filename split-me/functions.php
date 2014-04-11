@@ -15,7 +15,7 @@
  */
 
 require_once locate_template('/inc/init.php');          // Lang, nav and some theme support
-require_once locate_template('/inc/admin.php');         // All our admin page stuff
+require_once locate_template('/inc/admin.php');         // @since 2.0 - All our admin page stuff
 require_once locate_template('/inc/theme-setup.php');   // Theme config (excerpt, content width,...)
 require_once locate_template('/inc/scripts.php');       // Scripts and stylesheets
 require_once locate_template('/inc/tweaks.php');        // Tweaks and utils

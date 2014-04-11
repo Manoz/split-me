@@ -12,13 +12,22 @@
  */
 add_action( 'admin_menu', 'sme_admin_menu' );
 function sme_admin_menu() {
-    add_theme_page(
-        'Split Me Options',   // Page title
-        'Split Me Options',   // Menu title
+    $sme_admin_page = add_theme_page(
+        __( 'Split Me Options', 'splitme'), // Page title
+        __( 'Split Me Options', 'splitme'), // Menu title
         'edit_theme_options', // Capability
         'sme-edit-options',   // Menu slug
         'sme_options_page'    // Function
     );
+    add_action( 'admin_print_styles-' . $sme_admin_page, 'sme_admin_styles' );
+}
+
+/**
+ * Hook our admin css on our theme page only
+ * @since Split Me 2.0
+*/
+function sme_admin_styles() {
+    wp_enqueue_style( 'sme-admin-style', get_template_directory_uri() . '/css/sme-options.css', false, '2.0' );
 }
 
 /**
@@ -35,10 +44,10 @@ function sme_init_options() {
 
     // Add our settings group
     add_settings_section(
-        'general',                           // Unique identifier
-        __( 'General settings', 'splitme' ), // Section title (not needed)
-        'sme_useless_callback',              // Section callback (not needed)
-        'sme_theme_options'                  // Menu slug
+        'general',          // Unique identifier
+        '',                 // Section title (not needed)
+        '__return_false',   // Section callback (not needed)
+        'sme_theme_options' // Menu slug
     );
 
     // Register our settings fields
@@ -101,20 +110,6 @@ function sme_get_options() {
 }
 
 /**
- * Useless callback for the section groupe.
- * @since Split Me 2.0
-*/
-function sme_useless_callback() {
-?>
-
-    <p>
-        <?php _e( 'This is the general settings section. This paragraph (and the title above) seems to be required for the <em>WordPress Theme Review Team</em>, even if it is useless. So, there it is. <br> You can change your theme layout by clicking on the images.', 'splitme' ); ?>
-    </p>
-
-<?php
-}
-
-/**
  * Render the layout field
  * @since Split Me 2.0
 */
@@ -169,16 +164,4 @@ function sme_validate_options( $input ) {
         $output['sme_layout'] = $input['sme_layout'];
 
     return apply_filters( 'sme_validate_options', $output, $input );
-}
-
-/**
- * Register and hook our admin css on our theme options page only
- * @since Split Me 2.0
-*/
-add_action( 'admin_enqueue_scripts', 'sme_admin_styles' );
-function sme_admin_styles() {
-    if( $_GET['page'] == 'sme-edit-options' AND is_admin() ) {
-        wp_register_style( 'sme-admin-style', get_template_directory_uri() . '/css/sme-options.css', false, '2.0' );
-        wp_enqueue_style( 'sme-admin-style' );
-    }
 }

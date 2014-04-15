@@ -1,7 +1,7 @@
 Split Me
 ========
 
-### Version 2.4
+### Version 2.4.2
 
 **Available here:** https://wordpress.org/themes/split-me
 

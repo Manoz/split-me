@@ -139,7 +139,7 @@ function sme_get_options() {
     $defaults = array(
         // This array will be used in futur theme options
         'sme_layout' => '',
-        'sme_colors' => ''
+        'sme_colors' => 'default'
     );
 
     $defaults = apply_filters( 'sme_default_options', $defaults );

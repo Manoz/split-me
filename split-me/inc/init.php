@@ -32,7 +32,7 @@ function sme_setup() {
 
     /**
      * Add custom background
-     * The function is in /inc/custom-header.php
+     * @see /inc/custom-header.php
      * @since 1.0.0
      */
     $sme_custom_header = array(
@@ -48,13 +48,3 @@ function sme_setup() {
 
 }
 add_action( 'after_setup_theme', 'sme_setup' );
-
-/**
- * Function is_element_empty()
- * See navigation.php line 50
- * @since 1.0.0
- */
-function sme_is_element_empty($element) {
-    $element = trim($element);
-    return empty($element) ? false : true;
-}

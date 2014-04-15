@@ -1,42 +1,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Split Me v2\n"
-"POT-Creation-Date: 2014-04-11 16:51+0100\n"
-"PO-Revision-Date: 2014-04-11 16:52+0100\n"
-"Last-Translator: Kevin Legrand <manoz@outlook.com>\n"
+"POT-Creation-Date: 2014-04-15 02:10+0100\n"
+"PO-Revision-Date: 2014-04-15 02:10+0100\n"
+"Last-Translator: Manoz <manoz@outlook.com>\n"
 "Language-Team: Split Me <manoz@outlook.com>\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.6.4\n"
 "X-Poedit-KeywordsList: __;gettext;gettext_noop;_e\n"
-"X-Poedit-Basepath: /home/manoz/Bureau/WebDev/Github/split-me/split-me/\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\dev-wp\\wp-content\\themes\\split-me\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
-
-#: header.php:55
-msgid ""
-"<p style=\"color: white; padding-left: 10px;\">You should add a navigation "
-"menu <a href=\"wp-admin/nav-menus.php\">here</a>.</p>"
-msgstr ""
-
-#: index.php:32 category.php:33 search.php:28 author.php:51 tag.php:39
-msgid "Older Entries"
-msgstr ""
-
-#: index.php:33 category.php:34 search.php:29 author.php:52 tag.php:40
-msgid "Newer Entries"
-msgstr ""
-
-#: category.php:12
-#, php-format
-msgid "Category Archives: %s"
-msgstr ""
-
-#: search.php:14
-#, php-format
-msgid "Search Results for: %s"
-msgstr ""
 
 #: author.php:15
 #, php-format
@@ -48,17 +26,23 @@ msgstr ""
 msgid "About %s"
 msgstr ""
 
-#: tag.php:16
+#: author.php:51 category.php:33 index.php:32 search.php:28 tag.php:39
+msgid "Older Entries"
+msgstr ""
+
+#: author.php:52 category.php:34 index.php:33 search.php:29 tag.php:40
+msgid "Newer Entries"
+msgstr ""
+
+#: category.php:12
 #, php-format
-msgid "Tag Archives: %s"
+msgid "Category Archives: %s"
 msgstr ""
 
-#: single.php:17
-msgid "Previous post"
-msgstr ""
-
-#: single.php:18
-msgid "Next post"
+#: header.php:55
+msgid ""
+"<p style=\"color: white; padding-left: 10px;\">You should add a navigation "
+"menu <a href=\"wp-admin/nav-menus.php\">here</a>.</p>"
 msgstr ""
 
 #: inc/admin.php:16 inc/admin.php:17
@@ -69,33 +53,49 @@ msgstr ""
 msgid "Theme layout"
 msgstr ""
 
-#: inc/admin.php:82
+#: inc/admin.php:65
+msgid "Color schemes"
+msgstr ""
+
+#: inc/admin.php:90
 msgid "Left"
 msgstr ""
 
-#: inc/admin.php:87
+#: inc/admin.php:95
 msgid "Top"
 msgstr ""
 
-#: inc/admin.php:137
+#: inc/admin.php:110
+msgid "Default (blue)"
+msgstr ""
+
+#: inc/admin.php:115
+msgid "Red"
+msgstr ""
+
+#: inc/admin.php:120
+msgid "Orange"
+msgstr ""
+
+#: inc/admin.php:125
+msgid "Green"
+msgstr ""
+
+#: inc/admin.php:190
 #, php-format
 msgid "%s Theme Options"
 msgstr ""
 
-#: inc/admin.php:141
+#: inc/admin.php:194
 msgid ""
-"Hello and welcome to your theme options :&#41; <br /> There are only one "
-"option at the moment but I'm working on other interesting options like some "
-"\"color scheme\" choices. <br />Feel free to suggest me the options or "
-"features that you would like to have in this theme. You can ask me on <a "
-"target=\"_blank\" href=\"http://twitter.com/Manoz\">Twitter</a> (in French "
-"or English) on <a target=\"_blank\" href=\"https://github.com/Manoz/split-me"
-"\">Github</a> or in the <a target=\"_blank\" href=\"http://wordpress.org/"
-"support/theme/split-me\">WordPress Theme Forums</a>."
-msgstr ""
-
-#: inc/init.php:13
-msgid "Main nav"
+"<strong style=\"color: #738ac7;\">Hello there :&#41;</strong> <br /> As you "
+"can see, I've finally added the color scheme option. This version of Split "
+"Me is also compatible with WordPress 3.9. <br />As usual, feel free to "
+"suggest me the options or features that you would like to have in this "
+"theme. You can ask me on <a target=\"_blank\" href=\"http://twitter.com/Manoz"
+"\">Twitter</a> (in French or English) on <a target=\"_blank\" href=\"https://"
+"github.com/Manoz/split-me\">Github</a> or in the <a target=\"_blank\" href="
+"\"http://wordpress.org/support/theme/split-me\">WordPress Theme Forums</a>."
 msgstr ""
 
 #: inc/comments.php:18
@@ -123,59 +123,93 @@ msgstr ""
 msgid "Reply to "
 msgstr ""
 
+#: inc/init.php:13
+msgid "Main nav"
+msgstr ""
+
 #: inc/tweaks.php:27
 #, php-format
 msgid "Page %s"
 msgstr ""
 
-#: templates/content-page.php:24 templates/content.php:58
-#: templates/content-video.php:57 templates/content-audio.php:57
-msgid "Pages:"
+#: search.php:14
+#, php-format
+msgid "Search Results for: %s"
 msgstr ""
 
-#: templates/content-page.php:35 templates/content.php:69
-#: templates/content-video.php:68 templates/content-audio.php:68
-msgid "By"
+#: single.php:17
+msgid "Previous post"
 msgstr ""
 
-#: templates/content-page.php:36 templates/content.php:79
-#: templates/content-video.php:78 templates/content-audio.php:78
-msgid "Edit"
+#: single.php:18
+msgid "Next post"
 msgstr ""
 
-#: templates/content.php:20
-msgid "Read more"
+#: tag.php:16
+#, php-format
+msgid "Tag Archives: %s"
 msgstr ""
 
-#: templates/content.php:30 templates/content-video.php:29
-#: templates/content-audio.php:29
+#: templates/comments.php:18 templates/comments.php:32
+msgid "Comment navigation"
+msgstr ""
+
+#: templates/comments.php:19 templates/comments.php:33
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: templates/comments.php:20 templates/comments.php:34
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: templates/comments.php:43
+msgid "Comments are closed."
+msgstr ""
+
+#: templates/content-audio.php:29 templates/content-video.php:29
+#: templates/content.php:30
 msgid "Published on "
 msgstr ""
 
-#: templates/content.php:36 templates/content-video.php:35
-#: templates/content-audio.php:35
+#: templates/content-audio.php:35 templates/content-video.php:35
+#: templates/content.php:36
 msgid "by "
 msgstr ""
 
-#: templates/content.php:70 templates/content-video.php:69
-#: templates/content-audio.php:69
+#: templates/content-audio.php:57 templates/content-page.php:24
+#: templates/content-video.php:57 templates/content.php:58
+msgid "Pages:"
+msgstr ""
+
+#: templates/content-audio.php:68 templates/content-page.php:35
+#: templates/content-video.php:68 templates/content.php:69
+msgid "By"
+msgstr ""
+
+#: templates/content-audio.php:69 templates/content-video.php:69
+#: templates/content.php:70
 msgid "In"
 msgstr ""
 
-#: templates/content.php:72 templates/content-video.php:71
-#: templates/content-audio.php:71
+#: templates/content-audio.php:71 templates/content-video.php:71
+#: templates/content.php:72
 msgid " "
 msgstr ""
 
-#: templates/content.php:75 templates/content-video.php:74
-#: templates/content-audio.php:74
+#: templates/content-audio.php:74 templates/content-video.php:74
+#: templates/content.php:75
 #, php-format
 msgid "Tags: %1$s"
 msgstr ""
 
-#: templates/content.php:77 templates/content-video.php:76
-#: templates/content-audio.php:76
+#: templates/content-audio.php:76 templates/content-video.php:76
+#: templates/content.php:77
 msgid "No tags"
+msgstr ""
+
+#: templates/content-audio.php:78 templates/content-page.php:36
+#: templates/content-video.php:78 templates/content.php:79
+msgid "Edit"
 msgstr ""
 
 #: templates/content-nope.php:12
@@ -211,26 +245,14 @@ msgstr ""
 msgid "Good luck :&#41;"
 msgstr ""
 
+#: templates/content.php:20
+msgid "Read more"
+msgstr ""
+
 #: templates/searchform.php:10
 msgid "Search"
 msgstr ""
 
 #: templates/searchform.php:11
 msgid "Search..."
-msgstr ""
-
-#: templates/comments.php:18 templates/comments.php:32
-msgid "Comment navigation"
-msgstr ""
-
-#: templates/comments.php:19 templates/comments.php:33
-msgid "&larr; Older Comments"
-msgstr ""
-
-#: templates/comments.php:20 templates/comments.php:34
-msgid "Newer Comments &rarr;"
-msgstr ""
-
-#: templates/comments.php:43
-msgid "Comments are closed."
 msgstr ""

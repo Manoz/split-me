@@ -44,9 +44,9 @@
                     wp_nav_menu( array(
                         'theme_location' => 'primary_navigation',
                         'menu_class'     => 'sm-menu',
-                        'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                        'depth'          => 2,
-                        'walker'         => new SME_Nav_Walker
+                        'items_wrap'     => '<ul class="%2$s" role="navigation">%3$s</ul>',
+                        'depth'          => 0,
+                        'walker'         => new SplitMe_Nav_Walker()
                     ));
 
                 else :

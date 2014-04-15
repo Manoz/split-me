@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/**
+ * Split Me - Orange color scheme
+ * @since Split Me 2.4
+*/
+
+a {color: #ECA437;-webkit-transition: color .2s;transition: color .2s;}
+a:hover {color: #CE9F59;-webkit-transition: color .3s;transition: color .3s;}
+.comments-title,.comment-reply-title {color: #F7BF6A;}
+.post-list li:hover .read-more {color: #ECA437;-webkit-transition: all .2s;transition: all .2s;}
+.sm-menu a:hover,.sm-menu .active > a,.metas span:hover,.metas span a:hover,.comment-form label,.post-list li:hover .read-more {color: #ECA437;}
+.post-prev a:hover,.post-next a:hover,.sm-next a:hover,.sm-prev a:hover,.sm-page-links span,input[type="button"]:hover,input[type="submit"]:hover,button[type="submit"]:hover {background-color: #ECA437;}
+.format-status {border: 1px solid #ECA437;}

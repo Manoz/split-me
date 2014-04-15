@@ -59,6 +59,14 @@ function sme_init_options() {
         'sme_theme_options',             // Menu slug
         'general'                        // Settings section
     );
+    // Color schemes
+    add_settings_field(
+        'sme_colors',
+        __( 'Color schemes', 'splitme' ),
+        'sme_color_field',
+        'sme_theme_options',
+        'general'
+    );
 }
 add_action( 'admin_init', 'sme_init_options' );
 
@@ -92,6 +100,37 @@ function sme_layout_option() {
 }
 
 /**
+ * Returns our color schemes options inside an array
+ * @since Split Me 2.4
+*/
+function sme_color_option() {
+    $args = array(
+        'default' => array(
+            'value' => 'default',
+            'label' => __( 'Default (blue)', 'splitme' ),
+            'id'    => 'sme-c-default'
+        ),
+        'red' => array(
+            'value' => 'red',
+            'label' => __( 'Red', 'splitme' ),
+            'id'    => 'sme-c-red'
+        ),
+        'orange' => array(
+            'value' => 'orange',
+            'label' => __( 'Orange', 'splitme' ),
+            'id'    => 'sme-c-orange'
+        ),
+        'green' => array(
+            'value' => 'green',
+            'label' => __( 'Green', 'splitme' ),
+            'id'    => 'sme-c-green'
+        )
+    );
+    return apply_filters( 'sme_color_option', $args );
+}
+
+
+/**
  * Returns the options array
  * @since Split Me 2.0
 */
@@ -99,7 +138,8 @@ function sme_get_options() {
     $saved    = (array) get_option( 'sme_options' );
     $defaults = array(
         // This array will be used in futur theme options
-        'sme_layout'       => ''
+        'sme_layout' => '',
+        'sme_colors' => ''
     );
 
     $defaults = apply_filters( 'sme_default_options', $defaults );
@@ -127,6 +167,23 @@ function sme_layout_field() {
 }
 
 /**
+ * Render the color schemes field
+ * @since Split Me 2.4
+*/
+function sme_color_field() {
+    $options = sme_get_options();
+
+    foreach ( sme_color_option() as $button ) {
+    ?>
+    <div class="layout sme-colors">
+        <input id="<?php echo esc_attr( $button['id'] ); ?>" type="radio" name="sme_options[sme_colors]" value="<?php echo esc_attr( $button['value'] ); ?>" <?php checked( $options['sme_colors'], $button['value'] ); ?> />
+        <label title="<?php echo esc_attr( $button['label'] ); ?>" for="<?php echo esc_attr( $button['id'] ); ?>"></label>
+    </div>
+    <?php
+    }
+}
+
+/**
  * Render the options page
  * @since Split Me 2.0
 */
@@ -138,7 +195,7 @@ function sme_options_page() {
         <?php settings_errors(); ?>
 
         <p>
-            <?php _e( 'Hello and welcome to your theme options :&#41; <br /> There are only one option at the moment but I\'m working on other interesting options like some "color scheme" choices. <br />Feel free to suggest me the options or features that you would like to have in this theme. You can ask me on <a target="_blank" href="http://twitter.com/Manoz">Twitter</a> (in French or English) on <a target="_blank" href="https://github.com/Manoz/split-me">Github</a> or in the <a target="_blank" href="http://wordpress.org/support/theme/split-me">WordPress Theme Forums</a>.', 'splitme' ) ?>
+            <?php _e( '<strong style="color: #738ac7;">Hello there :&#41;</strong> <br /> As you can see, I\'ve finally added the color scheme option. This version of Split Me is also compatible with WordPress 3.9. <br />As usual, feel free to suggest me the options or features that you would like to have in this theme. You can ask me on <a target="_blank" href="http://twitter.com/Manoz">Twitter</a> (in French or English) on <a target="_blank" href="https://github.com/Manoz/split-me">Github</a> or in the <a target="_blank" href="http://wordpress.org/support/theme/split-me">WordPress Theme Forums</a>.', 'splitme' ) ?>
         </p>
 
         <form method="post" action="options.php">
@@ -159,9 +216,12 @@ function sme_options_page() {
 function sme_validate_options( $input ) {
     $output = array();
 
-    /** Layout radio button must be in our array */
+    /** Layout and colors radio button must be in our array */
     if ( isset( $input['sme_layout'] ) && array_key_exists( $input['sme_layout'], sme_layout_option() ) )
         $output['sme_layout'] = $input['sme_layout'];
+
+    if ( isset( $input['sme_colors'] ) && array_key_exists( $input['sme_colors'], sme_color_option() ) )
+        $output['sme_colors'] = $input['sme_colors'];
 
     return apply_filters( 'sme_validate_options', $output, $input );
 }

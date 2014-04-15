@@ -2,7 +2,7 @@
 
 /*
  * Main Split Me styles
- * Version: 2.3
+ * Version: 2.4
 */
 
 /* =Main and global styles
@@ -320,11 +320,16 @@ abbr[title], acronym[title] {
 }
 
 .sm-menu a {color: #fff;}
-.sm-menu a:hover {color: #268bd2;}
+
+.sm-menu a:hover,
+.sm-menu .active > a {
+    color: #268bd2;
+}
 
 .sub-menu {
-    margin: 0;
+    margin: 0 0 0 15px;
     padding: 0;
+    list-style: none;
 }
 
 /* =Menu nav

@@ -15,29 +15,29 @@ function sme_styles() {
     // Protocol (http or https) for webfonts
     $prot    = is_ssl() ? 'https' : 'http';
     // Theme options
+    global $options;
     $options = get_option( 'sme_options' );
-    $colors  = $options['sme_colors'];
 
-    wp_register_style('normalize',  get_template_directory_uri() . '/css/a-normalize.css', false, '2.4');
-    wp_register_style('main',       get_template_directory_uri() . '/css/main.css', false, '2.4' );
-    wp_register_style('sme_fonts',  get_template_directory_uri() . '/css/fonts.css', false, '2.4');
+    wp_register_style('normalize',  get_template_directory_uri() . '/css/a-normalize.css', false, '2.4.1');
+    wp_register_style('main',       get_template_directory_uri() . '/css/main.css', false, '2.4.1' );
+    wp_register_style('sme_fonts',  get_template_directory_uri() . '/css/fonts.css', false, '2.4.1');
     wp_register_style('webfont',    "$prot://fonts.googleapis.com/css?family=Over+the+Rainbow|Open+Sans:300,400,600" );
 
     // Register color schemes but don't enqueue them until the user has chosen one.
-    wp_register_style('sme_tm_red', get_template_directory_uri() . '/css/tm-red.css', false, '2.4' );
-    wp_register_style('sme_tm_ora', get_template_directory_uri() . '/css/tm-orange.css', false, '2.4' );
-    wp_register_style('sme_tm_gre', get_template_directory_uri() . '/css/tm-green.css', false, '2.4' );
+    wp_register_style('sme_tm_red', get_template_directory_uri() . '/css/tm-red.css', false, '2.4.1' );
+    wp_register_style('sme_tm_ora', get_template_directory_uri() . '/css/tm-orange.css', false, '2.4.1' );
+    wp_register_style('sme_tm_gre', get_template_directory_uri() . '/css/tm-green.css', false, '2.4.1' );
 
     wp_enqueue_style( 'normalize');
     wp_enqueue_style( 'main' );
     wp_enqueue_style( 'sme_fonts' );
     wp_enqueue_style( 'webfont' );
 
-    if( $colors == 'red' ) {
+    if( $options['sme_colors'] == 'red' ) {
         wp_enqueue_style( 'sme_tm_red' );
-    } elseif( $colors == 'orange' ) {
+    } elseif( $options['sme_colors'] == 'orange' ) {
         wp_enqueue_style( 'sme_tm_ora' );
-    } elseif( $colors == 'green' ) {
+    } elseif( $options['sme_colors'] == 'green' ) {
         wp_enqueue_style( 'sme_tm_gre' );
     }
 }
@@ -53,7 +53,7 @@ function sme_scripts() {
         'sme_scripts',
         get_template_directory_uri() . '/js/scripts.js',
         array( 'jquery' ),
-        '2.4',
+        '2.4.1',
         true
     );
 }

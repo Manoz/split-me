@@ -34,15 +34,11 @@ of your WordPress installation. You will then be able to activate the theme.
 ## Updates 
 
 Be careful to save your /inc/custom.php file before updating the theme.
+If you have a PHP error when updating the theme: http://bit.ly/1kmVHbT .
 
 ## Instructions
 
-Split Me has no options because it does not seem necessary.
-The only options are those available natively in WordPress:
-* Custom header (the badass left picture)
-* Custom background (colors and images)
-
-Also, the theme has no sidebar and the thumbnails are not displayed in a <img> tag. That's why "Theme Check" will not find the_post_thumbnail() because it's not needed. Read below for the thumbnails.
+Split Me has no sidebar and the thumbnails are not displayed in a <img> tag. That's why "Theme Check" will not find the_post_thumbnail() because it's not needed. Read below for the thumbnails.
 
 If you set a thumbnail on your post, it will be displayed in the large box on the left. You need to choose a thumbnail size, minimum 800x800 pixels. 
 If you do not set a thumbnail, the image that you have set in "custom-header" will be displayed.

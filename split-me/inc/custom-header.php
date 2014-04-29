@@ -22,9 +22,7 @@ function sme_add_style_custom_header() {
         get_header_image();
     $custom_css = "
    .sm-inner-h {
-       background: linear-gradient(
-           to bottom, rgba(0, 0, 0, 0.4) 0%%, transparent 30%%),
-           url('%s');
+       background: transparent url('%s');
        background-position: 50%% 30%%;
        background-size: cover;
    }

@@ -715,8 +715,6 @@ textarea {
 .sticky {border: 1px solid #cb4b16;}
 .format-gallery {border: 1px solid #d33682;}
 .format-image {border: 1px solid #73d216;}
-/*.format-audio {border: 1px solid #268bd2;} Temp remove v2.0 */
-/*.format-video {border: 1px solid #586e75;} Temp remove v2.0 */
 .format-aside {border: 1px solid #073642;}
 .format-status {border: 1px solid #3465a4;}
 .format-link {border: 1px solid #6c71c4;}
@@ -780,7 +778,7 @@ textarea {
 }
 
 .gallery-caption {
-
+    /* Add your style if needed */
 }
 
 .wp-caption-text {
@@ -803,12 +801,3 @@ textarea {
     .sm-top .sm-inner-h {height: auto !important;}
     .sm-top .sm-nav {height: auto !important;}
 }
-
-/* Not used for now
-@media only screen and (max-device-width : 360px) and (orientation: landscape) {}
-@media only screen and (max-width : 480px) {}
-
-@media all and (-webkit-min-device-pixel-ratio:0) {}
-@media all and (-webkit-min-device-pixel-ratio:0) and (max-width: 959px){}
-@media all and (-webkit-min-device-pixel-ratio:0) and (max-width: 700px){}
-*/

@@ -1,7 +1,7 @@
 Split Me
 ========
 
-### Version 2.4.2
+### Version 2.4.3
 
 **Available here:** https://wordpress.org/themes/split-me
 
@@ -52,6 +52,12 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 For questions, comments or bug reports, please go to [WordPress forums](http://wordpress.org/support/theme/split-me) or contact me on Twitter [@Manoz](http://www.twitter.com/Manoz) or also on Github.
 
 ### Changelog
+
+### 2.4.3 - 29.04.2014
+* Background Image if IE < IE 10
+* Fix theme update error
+* CSS and JS minify
+* This theme is now able to receive kittens coming from the moon
 
 ### 2.4 - 15.04.2014
 * Tested up to WP 3.9

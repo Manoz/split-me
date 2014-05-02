@@ -11,7 +11,9 @@
  * Custom Excerpt tag
  */
 function sme_custom_excerpt_length( $length ) {
-    return 25; // Excerpt length
+    $value = get_theme_mod( 'sme_excerpt_length' );
+
+    return $value; // Excerpt length
 }
 add_filter( 'excerpt_length', 'sme_custom_excerpt_length', 999 );
 
@@ -21,5 +23,3 @@ function sme_excerpt_more( $more ) {
 }
 add_filter('excerpt_more', 'sme_excerpt_more');
 
-// Content width
-if (!isset($content_width)) {$content_width = 730;}

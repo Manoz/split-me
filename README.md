@@ -12,7 +12,6 @@ Split Me is a simple minimal WordPress theme wich contains no sidebar, no slider
 * A Fontello custom pack for the icon font with only "Font Awesome" (http://fontello.com), licensed under SIL OFL 1.1 (http://scripts.sil.org/OFL)
 * Modernizr (http://modernizr.com/) script licensed under MIT license (www.modernizr.com/license/)
 * Image /images/default-header.jpg (http://pixabay.com/fr/pin-for%C3%AAt-coussin-clairi%C3%A8re-misty-273826/) is released into the public domain.
-* Image /images/default-header-2.jpg (http://commons.wikimedia.org/wiki/File:Kitten_(06)_by_Ron.jpg) is released into the public domain.
 
 ## Screenshots
 
@@ -31,16 +30,17 @@ You can install the theme through the WordPress installer under "Themes" > "Inst
 Alternatively you can download the file, unzip it and move the unzipped contents to the "wp-content/themes" folder
 of your WordPress installation. You will then be able to activate the theme.
 
-## Updates 
+## Updates
 
 Be careful to save your /inc/custom.php file before updating the theme.
-If you have a PHP error when updating the theme: http://bit.ly/1kmVHbT .
+I removed the Theme Option page. You can now choose your layout and your own colors in 'Appearance' > 'Customize' in your back office.
+If you go in the WordPress Customizer, you will maybe see some PHP Errors. It's a bug with WordPress 3.9 and default header images. There is no impact in your website. The error will disapear in the next WordPress Update: https://core.trac.wordpress.org/ticket/27850
 
 ## Instructions
 
 Split Me has no sidebar and the thumbnails are not displayed in a <img> tag. That's why "Theme Check" will not find the_post_thumbnail() because it's not needed. Read below for the thumbnails.
 
-If you set a thumbnail on your post, it will be displayed in the large box on the left. You need to choose a thumbnail size, minimum 800x800 pixels. 
+If you set a thumbnail on your post, it will be displayed in the large box on the left. You need to choose a thumbnail size, minimum 800x800 pixels.
 If you do not set a thumbnail, the image that you have set in "custom-header" will be displayed.
 
 ### Support
@@ -48,6 +48,13 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 For questions, comments or bug reports, please go to [WordPress forums](http://wordpress.org/support/theme/split-me) or contact me on Twitter [@Manoz](http://www.twitter.com/Manoz) or also on Github.
 
 ### Changelog
+
+### 2.4.4 - 01.05.2014
+* Remove theme option page
+* Add custom settings in the WP Customizer
+* Changed the default title and menu colors
+* Removed crappy gradients
+* This theme can generate candies. Yummy!
 
 ### 2.4.3 - 29.04.2014
 * Background Image if IE < IE 10

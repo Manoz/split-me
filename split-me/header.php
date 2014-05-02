@@ -24,19 +24,19 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <?php
-        $options = get_option( 'sme_options' );
-        $layout  = $options['sme_layout'];
-    ?>
-    <header class="sm-h <?php if( $layout == 'top') {echo 'sm-top'; } ?>" role="banner">
+    <header class="sm-h" role="banner">
         <div class="sm-inner-h">
             <div class="sm-icn">
                 <div class="menu-icn-wrap">
                     <div class="menu-icn"></div>
                 </div>
             </div>
+
+            <?php if( display_header_text() ) : ?>
             <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
             <h2 class="site-desc"><?php bloginfo('description'); ?></h2>
+            <?php endif; ?>
+
             <div class="sm-nav">
                 <?php
                 if (has_nav_menu('primary_navigation')) :

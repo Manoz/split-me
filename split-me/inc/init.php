@@ -7,6 +7,14 @@
  */
 
 function sme_setup() {
+
+    // Set the content width
+    global $content_width;
+    if ( ! isset( $content_width ) ) {
+        $content_width = 730;
+    }
+
+    // Load our textdomain
     load_theme_textdomain( 'splitme', get_template_directory() . '/lang' );
 
     register_nav_menus(array(
@@ -36,15 +44,16 @@ function sme_setup() {
      * @since 1.0.0
      */
     $sme_custom_header = array(
-        'width'         => 810,
-        'height'        => 810,
-        'default-image' => get_template_directory_uri() . '/images/default-header.jpg',
-        'uploads'       => true,
+        'width'              => 1200,
+        'height'             => 1200,
+        'default-image'      => get_template_directory_uri() . '/images/default-header.jpg',
+        'default-text-color' => 'e7e7e7',
+        'uploads'            => true,
     );
     add_theme_support( 'custom-header', $sme_custom_header );
 
     // Add editor styles
-    add_editor_style( '/css/editor-style.css' );
+    add_editor_style( '/css/editor-style.min.css' );
 
 }
 add_action( 'after_setup_theme', 'sme_setup' );

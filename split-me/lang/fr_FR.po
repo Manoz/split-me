@@ -1,17 +1,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Split Me v2\n"
-"POT-Creation-Date: 2014-04-15 02:04+0100\n"
-"PO-Revision-Date: 2014-04-15 02:09+0100\n"
+"POT-Creation-Date: 2014-05-02 02:38+0100\n"
+"PO-Revision-Date: 2014-05-02 02:39+0100\n"
 "Last-Translator: Manoz <manoz@outlook.com>\n"
 "Language-Team: Split Me <manoz@outlook.com>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Poedit 1.6.5\n"
 "X-Poedit-KeywordsList: __;_e\n"
-"X-Poedit-Basepath: C:\\wamp\\www\\dev-wp\\wp-content\\themes\\split-me\n"
+"X-Poedit-Basepath: C:\\Users\\Manoz\\Desktop\\Webdev\\split-me\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
@@ -46,69 +46,6 @@ msgstr ""
 "<p style=\"color: white; padding-left: 10px;\">Vous devriez ajouter un menu "
 "de navigation <a href=\"wp-admin/nav-menus.php\">ici</a>.</p>"
 
-#: inc/admin.php:16 inc/admin.php:17
-msgid "Split Me Options"
-msgstr "Options Split Me"
-
-#: inc/admin.php:57
-msgid "Theme layout"
-msgstr "Mise en page du thème"
-
-#: inc/admin.php:65
-msgid "Color schemes"
-msgstr "Couleurs du thème"
-
-#: inc/admin.php:90
-msgid "Left"
-msgstr "Gauche"
-
-#: inc/admin.php:95
-msgid "Top"
-msgstr "En haut"
-
-#: inc/admin.php:110
-msgid "Default (blue)"
-msgstr "Défaut (bleu)"
-
-#: inc/admin.php:115
-msgid "Red"
-msgstr "Rouge"
-
-#: inc/admin.php:120
-msgid "Orange"
-msgstr "Orange"
-
-#: inc/admin.php:125
-msgid "Green"
-msgstr "Vert"
-
-#: inc/admin.php:190
-#, php-format
-msgid "%s Theme Options"
-msgstr "Options de %s"
-
-#: inc/admin.php:194
-msgid ""
-"<strong style=\"color: #738ac7;\">Hello there :&#41;</strong> <br /> As you "
-"can see, I've finally added the color scheme option. This version of Split "
-"Me is also compatible with WordPress 3.9. <br />As usual, feel free to "
-"suggest me the options or features that you would like to have in this "
-"theme. You can ask me on <a target=\"_blank\" href=\"http://twitter.com/Manoz"
-"\">Twitter</a> (in French or English) on <a target=\"_blank\" href=\"https://"
-"github.com/Manoz/split-me\">Github</a> or in the <a target=\"_blank\" href="
-"\"http://wordpress.org/support/theme/split-me\">WordPress Theme Forums</a>."
-msgstr ""
-"<strong style=\"color: #738ac7;\">Bonjour ici :&#41;</strong> <br /> Comme "
-"vous pouvez le voir, j'ai finalement ajouté l'option des couleurs du thème. "
-"Cette version de Split Me est également compatible avec WordPress 3.9. <br /"
-">Comme d'habitude, n'hésitez pas à me suggérer les options ou "
-"fonctionnalités que vous aimeriez avoir dans ce thème. Vous pouvez me "
-"demander sur <a target=\"_blank\" href=\"http://twitter.com/Manoz\">Twitter</"
-"a> (en Français ou en Anglais) sur <a target=\"_blank\" href=\"https://"
-"github.com/Manoz/split-me\">Github</a> ou sur les <a target=\"_blank\" href="
-"\"http://wordpress.org/support/theme/split-me\">forums des thèmes WordPress</"
-"a>."
-
 #: inc/comments.php:18
 msgid "Pingback:"
 msgstr "Pingback:"
@@ -134,7 +71,47 @@ msgstr "Anonyme"
 msgid "Reply to "
 msgstr "Répondre à "
 
-#: inc/init.php:13
+#: inc/customizer.php:24
+msgid "Split Me Layout"
+msgstr "Split Me - Mise en page"
+
+#: inc/customizer.php:26
+msgid "Choose your theme's layout."
+msgstr "Choisissez votre mise en page."
+
+#: inc/customizer.php:99
+msgid "Theme layout"
+msgstr "Mise en page du thème"
+
+#: inc/customizer.php:102
+msgid "Left header"
+msgstr "Header à gauche"
+
+#: inc/customizer.php:103
+msgid "Top header"
+msgstr "Header en haut"
+
+#: inc/customizer.php:113
+msgid "Excerpt length &#40;words number&#41;"
+msgstr "Longueur de l'extrait"
+
+#: inc/customizer.php:126
+msgid "Menu icon color"
+msgstr "Couleur de l'icône du menu"
+
+#: inc/customizer.php:139
+msgid "Post titles color"
+msgstr "Couleur des titres des articles"
+
+#: inc/customizer.php:152
+msgid "Text color"
+msgstr "Couleur des textes"
+
+#: inc/customizer.php:165
+msgid "Post icons color"
+msgstr "Couleur des icônes des articles"
+
+#: inc/init.php:21
 msgid "Main nav"
 msgstr "Navigation principale"
 
@@ -282,3 +259,49 @@ msgstr "Recherche"
 #: templates/searchform.php:11
 msgid "Search..."
 msgstr "Rechercher..."
+
+#~ msgid "Color schemes"
+#~ msgstr "Couleurs du thème"
+
+#~ msgid "Left"
+#~ msgstr "Gauche"
+
+#~ msgid "Top"
+#~ msgstr "En haut"
+
+#~ msgid "Default (blue)"
+#~ msgstr "Défaut (bleu)"
+
+#~ msgid "Red"
+#~ msgstr "Rouge"
+
+#~ msgid "Orange"
+#~ msgstr "Orange"
+
+#~ msgid "Green"
+#~ msgstr "Vert"
+
+#~ msgid "%s Theme Options"
+#~ msgstr "Options de %s"
+
+#~ msgid ""
+#~ "<strong style=\"color: #738ac7;\">Hello there :&#41;</strong> <br /> As "
+#~ "you can see, I've finally added the color scheme option. This version of "
+#~ "Split Me is also compatible with WordPress 3.9. <br />As usual, feel free "
+#~ "to suggest me the options or features that you would like to have in this "
+#~ "theme. You can ask me on <a target=\"_blank\" href=\"http://twitter.com/"
+#~ "Manoz\">Twitter</a> (in French or English) on <a target=\"_blank\" href="
+#~ "\"https://github.com/Manoz/split-me\">Github</a> or in the <a target="
+#~ "\"_blank\" href=\"http://wordpress.org/support/theme/split-me\">WordPress "
+#~ "Theme Forums</a>."
+#~ msgstr ""
+#~ "<strong style=\"color: #738ac7;\">Bonjour ici :&#41;</strong> <br /> "
+#~ "Comme vous pouvez le voir, j'ai finalement ajouté l'option des couleurs "
+#~ "du thème. Cette version de Split Me est également compatible avec "
+#~ "WordPress 3.9. <br />Comme d'habitude, n'hésitez pas à me suggérer les "
+#~ "options ou fonctionnalités que vous aimeriez avoir dans ce thème. Vous "
+#~ "pouvez me demander sur <a target=\"_blank\" href=\"http://twitter.com/"
+#~ "Manoz\">Twitter</a> (en Français ou en Anglais) sur <a target=\"_blank\" "
+#~ "href=\"https://github.com/Manoz/split-me\">Github</a> ou sur les <a "
+#~ "target=\"_blank\" href=\"http://wordpress.org/support/theme/split-me"
+#~ "\">forums des thèmes WordPress</a>."

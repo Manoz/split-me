@@ -36,8 +36,9 @@ function sme_customize_register( $wp_customize ) {
     $wp_customize->add_setting(
         'sme_layout[layout_setting]',
         array(
-            'default' => 'left-header',
-            'type'    => 'option'
+            'default'           => 'left-header',
+            'type'              => 'option',
+            'sanitize_callback' => 'sme_sanitize_radio'
         )
     );
 
@@ -191,4 +192,17 @@ function sme_body_classes( $classes ) {
 */
 function sme_sanitize_text( $input ) {
     return wp_kses_post( force_balance_tags( $input ) );
+}
+
+function sme_sanitize_radio( $input ) {
+    $valid = array(
+        'left-header' => __( 'Left header', 'splitme' ),
+        'top-header'  => __( 'Top header', 'splitme' )
+    );
+
+    if ( array_key_exists( $input, $valid ) ) {
+        return $input;
+    } else {
+        return '';
+    }
 }

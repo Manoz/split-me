@@ -1,6 +1,6 @@
 Theme Name: Split Me
 Theme URI: http://manoz.github.io/split-me/
-Version: 2.4.4
+Version: 2.4.6
 Requires at least: WP 3.6
 Tested up to: WP 3.9
 
@@ -21,6 +21,7 @@ Split Me uses:
 * A Fontello custom pack for the icon font with only "Font Awesome" (http://fontello.com), licensed under SIL OFL 1.1 (http://scripts.sil.org/OFL)
 * Modernizr (http://modernizr.com/) script licensed under MIT license (www.modernizr.com/license/)
 * Image /images/default-header.jpg (http://pixabay.com/fr/pin-for%C3%AAt-coussin-clairi%C3%A8re-misty-273826/) is released into the public domain.
+* Image /images/default-header-2.jpg (http://pixabay.com/fr/le-chat-sweet-kitty-les-animaux-323262/) is released into the public domain.
 
 ========= Installation =========
 
@@ -53,6 +54,12 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 For questions, comments or bug reports, please go to WordPress forums (http://wordpress.org/support/theme/split-me) or contact me on Twitter @Manoz or also on Github.
 
 == Changelog ==
+
+= 2.4.6 - 02.05.2014 =
+* Add sanitization callback for radio button
+* Add a new default header image
+* Change theme screenshot
+* My friends are getting married today. Happy life for them <3
 
 = 2.4.4 - 01.05.2014 =
 * Remove theme option page

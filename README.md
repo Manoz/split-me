@@ -1,7 +1,7 @@
 Split Me
 ========
 
-### Version 2.4.4
+### Version 2.4.6
 
 **Available here:** https://wordpress.org/themes/split-me
 
@@ -12,6 +12,7 @@ Split Me is a simple minimal WordPress theme wich contains no sidebar, no slider
 * A Fontello custom pack for the icon font with only "Font Awesome" (http://fontello.com), licensed under SIL OFL 1.1 (http://scripts.sil.org/OFL)
 * Modernizr (http://modernizr.com/) script licensed under MIT license (www.modernizr.com/license/)
 * Image /images/default-header.jpg (http://pixabay.com/fr/pin-for%C3%AAt-coussin-clairi%C3%A8re-misty-273826/) is released into the public domain.
+* Image /images/default-header-2.jpg (http://pixabay.com/fr/le-chat-sweet-kitty-les-animaux-323262/) is released into the public domain.
 
 ## Screenshots
 
@@ -38,7 +39,14 @@ If you go in the WordPress Customizer, you will maybe see some PHP Errors. It's 
 
 ## Instructions
 
-Split Me has no sidebar and the thumbnails are not displayed in a <img> tag. That's why "Theme Check" will not find the_post_thumbnail() because it's not needed. Read below for the thumbnails.
+Split Me has no extra options because it does not seem necessary.
+The only options are those available in the WordPress Customizer:
+* Custom layout (left or top header)
+* Custom header (the badass left picture)
+* Custom background (colors and images)
+* Custom colors (post titles, icons, menu, site title, etc...)
+
+Also, the theme has no sidebar and the thumbnails are not displayed in a <img> tag. That's why "Theme Check" will not find the_post_thumbnail() because it's not needed. Read below for the thumbnails.
 
 If you set a thumbnail on your post, it will be displayed in the large box on the left. You need to choose a thumbnail size, minimum 800x800 pixels.
 If you do not set a thumbnail, the image that you have set in "custom-header" will be displayed.
@@ -48,6 +56,12 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 For questions, comments or bug reports, please go to [WordPress forums](http://wordpress.org/support/theme/split-me) or contact me on Twitter [@Manoz](http://www.twitter.com/Manoz) or also on Github.
 
 ### Changelog
+
+### 2.4.6 - 02.05.2014
+* Add sanitization callback for radio button
+* Add a new default header image
+* Change theme screenshot
+* My friends are getting married today. Happy life for them <3
 
 ### 2.4.4 - 01.05.2014
 * Remove theme option page

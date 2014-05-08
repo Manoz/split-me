@@ -12,9 +12,9 @@ function sme_styles() {
     // Protocol (http or https) for webfonts
     $prot = is_ssl() ? 'https' : 'http';
 
-    wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.min.css', false, '2.4.4');
-    wp_enqueue_style( 'main',      get_template_directory_uri() . '/css/main.min.css', false, '2.4.4' );
-    wp_enqueue_style( 'sme_fonts', get_template_directory_uri() . '/css/fonts.min.css', false, '2.4.4');
+    wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.min.css', false, '2.4.6');
+    wp_enqueue_style( 'main',      get_template_directory_uri() . '/css/main.min.css', false, '2.4.6' );
+    wp_enqueue_style( 'sme_fonts', get_template_directory_uri() . '/css/fonts.min.css', false, '2.4.6');
     wp_enqueue_style( 'webfont',   "$prot://fonts.googleapis.com/css?family=Over+the+Rainbow|Open+Sans:300,400,600" );
 
 }
@@ -31,7 +31,7 @@ function sme_scripts() {
         'sme_scripts',
         get_template_directory_uri() . '/js/scripts.min.js',
         array( 'jquery' ),
-        '2.4.4',
+        '2.4.6',
         true
     );
 }

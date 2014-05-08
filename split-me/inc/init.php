@@ -46,7 +46,7 @@ function sme_setup() {
     $sme_custom_header = array(
         'width'              => 1200,
         'height'             => 1200,
-        'default-image'      => get_template_directory_uri() . '/images/default-header.jpg',
+        'default-image'      => get_template_directory_uri() . '/images/default-header-2.jpg',
         'default-text-color' => 'e7e7e7',
         'uploads'            => true,
     );

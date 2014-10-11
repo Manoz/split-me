@@ -4,8 +4,10 @@
  */
 (function($) {
     $('.menu-icn-wrap').on('click', function() {
-        $('.site-title,.site-desc,.sm-f').toggle();
+        $('.site-title,.site-desc').toggle();
         $(this).children().toggleClass('active');
+        $('.sm-f').fadeToggle(200);
         $('.sm-nav').fadeToggle(200);
+        $('.sm-h .searchform').fadeToggle(0);
     })
 })(jQuery);

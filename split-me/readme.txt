@@ -1,8 +1,8 @@
 Theme Name: Split Me
 Theme URI: http://manoz.github.io/split-me/
-Version: 2.4.6
+Version: 2.5
 Requires at least: WP 3.6
-Tested up to: WP 3.9
+Tested up to: WP 4.0
 
 Author: Kevin Legrand
 Author URI: http://k-legrand.fr/
@@ -49,11 +49,32 @@ Also, the theme has no sidebar and the thumbnails are not displayed in a <img> t
 If you set a thumbnail on your post, it will be displayed in the large box on the left. You need to choose a thumbnail size, minimum 800x800 pixels.
 If you do not set a thumbnail, the image that you have set in "custom-header" will be displayed.
 
+To add a social media navigation in the footer, use the classic WordPress menus in `Appearance` > `Menus`.
+Simple add custom links with your social media profiles url. The theme css will detect the social media url and will add the icon and the hover color.
+Actually, only these social media links are supported:
+* Twitter
+* Facebook
+* Google Plus
+* LinkedIn
+* Dribbble
+* Pinterest
+* Instagram
+* Github
+
 ========= Support =========
 
 For questions, comments or bug reports, please go to WordPress forums (http://wordpress.org/support/theme/split-me) or contact me on Twitter @Manoz or also on Github.
 
 == Changelog ==
+
+= 2.5 - 11.10.2014 =
+* Add search form in the header
+* Add social media navigation
+* Fix images max width
+* Changing post titles color in the customizer will now also change page titles color
+* Fix modernizr enqueue
+* CSS and js fix
+* There is no spoon
 
 = 2.4.6 - 02.05.2014 =
 * Add sanitization callback for radio button

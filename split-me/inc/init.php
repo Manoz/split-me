@@ -5,13 +5,13 @@
  * @package Split Me
  * @since Split Me 1.0.0
  */
-
+add_action( 'after_setup_theme', 'sme_setup' );
 function sme_setup() {
 
     // Set the content width
     global $content_width;
     if ( ! isset( $content_width ) ) {
-        $content_width = 730;
+        $content_width = 780;
     }
 
     // Load our textdomain
@@ -19,6 +19,7 @@ function sme_setup() {
 
     register_nav_menus(array(
         'primary_navigation' => __( 'Main nav', 'splitme' ),
+        'social_navigation'  => __( 'Social media nav', 'splitme' )
     ));
 
     // Add some theme support
@@ -56,4 +57,3 @@ function sme_setup() {
     add_editor_style( '/css/editor-style.min.css' );
 
 }
-add_action( 'after_setup_theme', 'sme_setup' );

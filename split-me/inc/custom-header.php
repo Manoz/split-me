@@ -37,7 +37,7 @@ function sme_add_style_custom_header() {
        .site-title a, .site-desc {color: #$title_color;}
        .menu-icn {background: $menu_icn_color;}
        .menu-icn:before, .menu-icn:after {background: $menu_icn_color;}
-       .post-list li .post-link {color: $post_title_color;}
+       .post-list li .post-link, .entry-title a {color: $post_title_color;}
        body {color: $text_color}
        .metas span, .metas span a {color: $post_icn_color}
        ";
@@ -47,7 +47,7 @@ function sme_add_style_custom_header() {
        .site-title a, .site-desc {color: #$title_color;}
        .menu-icn {background: $menu_icn_color;}
        .menu-icn:before, .menu-icn:after {background: $menu_icn_color;}
-       .post-list li .post-link {color: $post_title_color;}
+       .post-list li .post-link, .entry-title a {color: $post_title_color;}
        body {color: $text_color}
        .metas span, .metas span a {color: $post_icn_color}
        ";

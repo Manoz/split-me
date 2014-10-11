@@ -17,10 +17,6 @@
     <link rel="profile" href="http://gmpg.org/xfn/11" >
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" >
 
-    <!--[if lt IE 9]>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.min.js"></script>
-    <![endif]-->
-
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -32,14 +28,16 @@
                 </div>
             </div>
 
-            <?php if( display_header_text() ) : ?>
+            <?php get_search_form(); ?>
+
+            <?php if ( display_header_text() ) : ?>
             <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-            <h2 class="site-desc"><?php bloginfo('description'); ?></h2>
+            <h2 class="site-desc"><?php bloginfo( 'description' ); ?></h2>
             <?php endif; ?>
 
             <div class="sm-nav">
                 <?php
-                if (has_nav_menu('primary_navigation')) :
+                if ( has_nav_menu('primary_navigation') ) :
 
                     wp_nav_menu( array(
                         'theme_location' => 'primary_navigation',
@@ -58,7 +56,6 @@
                 endif;
                 ?>
             </div>
-
         </div>
     </header>
 

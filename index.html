@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -21,7 +21,7 @@
       <div class="inner">
         <h1>Split-me</h1>
         <h2>Split Me is a simple minimal WordPress theme</h2>
-        <a href="https://github.com/Manoz/split-me" class="button"><small>View project on</small>GitHub</a>
+        <a href="https://github.com/Manoz/split-me" class="button"><small>View project on</small> GitHub</a>
       </div>
     </header>
 
@@ -32,7 +32,7 @@
 <a name="split-me" class="anchor" href="#split-me"><span class="octicon octicon-link"></span></a>Split Me</h1>
 
 <h3>
-<a name="version-244" class="anchor" href="#version-244"><span class="octicon octicon-link"></span></a>Version 2.4.4</h3>
+<a name="version-25" class="anchor" href="#version-25"><span class="octicon octicon-link"></span></a>Version 2.5</h3>
 
 <p><strong>Available here:</strong> <a href="https://wordpress.org/themes/split-me">https://wordpress.org/themes/split-me</a></p>
 
@@ -45,10 +45,16 @@
 <li>A Fontello custom pack for the icon font with only "Font Awesome" (<a href="http://fontello.com">http://fontello.com</a>), licensed under SIL OFL 1.1 (<a href="http://scripts.sil.org/OFL">http://scripts.sil.org/OFL</a>)</li>
 <li>Modernizr (<a href="http://modernizr.com/">http://modernizr.com/</a>) script licensed under MIT license (<a href="http://www.modernizr.com/license/">www.modernizr.com/license/</a>)</li>
 <li>Image /images/default-header.jpg (<a href="http://pixabay.com/fr/pin-for%C3%AAt-coussin-clairi%C3%A8re-misty-273826/">http://pixabay.com/fr/pin-for%C3%AAt-coussin-clairi%C3%A8re-misty-273826/</a>) is released into the public domain.</li>
-</ul><h2>
+<li>Image /images/default-header-2.jpg (<a href="http://pixabay.com/fr/le-chat-sweet-kitty-les-animaux-323262/">http://pixabay.com/fr/le-chat-sweet-kitty-les-animaux-323262/</a>) is released into the public domain.</li>
+</ul>
+
+<h2>
 <a name="screenshots" class="anchor" href="#screenshots"><span class="octicon octicon-link"></span></a>Screenshots</h2>
 
-<p><img src="https://raw.githubusercontent.com/Manoz/split-me/master/screenshots/screen-1.png" alt="ScreenShot"><img src="https://raw.githubusercontent.com/Manoz/split-me/master/screenshots/screen-2.png" alt="ScreenShot"><img src="https://raw.githubusercontent.com/Manoz/split-me/master/screenshots/screen-5.png" alt="ScreenShot"><img src="https://raw.githubusercontent.com/Manoz/split-me/master/screenshots/screen-6.png" alt="ScreenShot"></p>
+<p><img src="https://raw.githubusercontent.com/Manoz/split-me/master/screenshots/screen-1.png" alt="ScreenShot">
+<img src="https://raw.githubusercontent.com/Manoz/split-me/master/screenshots/screen-2.png" alt="ScreenShot">
+<img src="https://raw.githubusercontent.com/Manoz/split-me/master/screenshots/screen-5.png" alt="ScreenShot">
+<img src="https://raw.githubusercontent.com/Manoz/split-me/master/screenshots/screen-6.png" alt="ScreenShot"></p>
 
 <h2>
 <a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
@@ -72,10 +78,35 @@ If you go in the WordPress Customizer, you will maybe see some PHP Errors. It's 
 <h2>
 <a name="instructions" class="anchor" href="#instructions"><span class="octicon octicon-link"></span></a>Instructions</h2>
 
-<p>Split Me has no sidebar and the thumbnails are not displayed in a <img> tag. That's why "Theme Check" will not find the_post_thumbnail() because it's not needed. Read below for the thumbnails.</p>
+<p>Split Me has no extra options because it does not seem necessary.
+The only options are those available in the WordPress Customizer:</p>
+
+<ul>
+<li>Custom layout (left or top header)</li>
+<li>Custom header (the badass left picture)</li>
+<li>Custom background (colors and images)</li>
+<li>Custom colors (post titles, icons, menu, site title, etc...)</li>
+</ul>
+
+<p>Also, the theme has no sidebar and the thumbnails are not displayed in a <img> tag. That's why "Theme Check" will not find the_post_thumbnail() because it's not needed. Read below for the thumbnails.</p>
 
 <p>If you set a thumbnail on your post, it will be displayed in the large box on the left. You need to choose a thumbnail size, minimum 800x800 pixels.
 If you do not set a thumbnail, the image that you have set in "custom-header" will be displayed.</p>
+
+<p>To add a social media navigation in the footer, use the classic WordPress menus in <code>Appearance</code> &gt; <code>Menus</code>.
+Simple add custom links with your social media profiles url. The theme css will detect the social media url and will add the icon and the hover color.
+Actually, only these social media links are supported:</p>
+
+<ul>
+<li>Twitter</li>
+<li>Facebook</li>
+<li>Google Plus</li>
+<li>LinkedIn</li>
+<li>Dribbble</li>
+<li>Pinterest</li>
+<li>Instagram</li>
+<li>Github</li>
+</ul>
 
 <h3>
 <a name="support" class="anchor" href="#support"><span class="octicon octicon-link"></span></a>Support</h3>
@@ -86,6 +117,29 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 <a name="changelog" class="anchor" href="#changelog"><span class="octicon octicon-link"></span></a>Changelog</h3>
 
 <h3>
+<a name="25---11102014" class="anchor" href="#25---11102014"><span class="octicon octicon-link"></span></a>2.5 - 11.10.2014</h3>
+
+<ul>
+<li>Add search form in the header</li>
+<li>Add social media navigation</li>
+<li>Fix images max width</li>
+<li>Changing post titles color in the customizer will now also change page titles color</li>
+<li>Fix modernizr enqueue</li>
+<li>CSS and js fix</li>
+<li>There is no spoon</li>
+</ul>
+
+<h3>
+<a name="246---02052014" class="anchor" href="#246---02052014"><span class="octicon octicon-link"></span></a>2.4.6 - 02.05.2014</h3>
+
+<ul>
+<li>Add sanitization callback for radio button</li>
+<li>Add a new default header image</li>
+<li>Change theme screenshot</li>
+<li>My friends are getting married today. Happy life for them &lt;3</li>
+</ul>
+
+<h3>
 <a name="244---01052014" class="anchor" href="#244---01052014"><span class="octicon octicon-link"></span></a>2.4.4 - 01.05.2014</h3>
 
 <ul>
@@ -94,7 +148,9 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 <li>Changed the default title and menu colors</li>
 <li>Removed crappy gradients</li>
 <li>This theme can generate candies. Yummy!</li>
-</ul><h3>
+</ul>
+
+<h3>
 <a name="243---29042014" class="anchor" href="#243---29042014"><span class="octicon octicon-link"></span></a>2.4.3 - 29.04.2014</h3>
 
 <ul>
@@ -102,34 +158,44 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 <li>Fix theme update error</li>
 <li>CSS and JS minify</li>
 <li>This theme is now able to receive kittens coming from the moon</li>
-</ul><h3>
+</ul>
+
+<h3>
 <a name="24---15042014" class="anchor" href="#24---15042014"><span class="octicon octicon-link"></span></a>2.4 - 15.04.2014</h3>
 
 <ul>
 <li>Tested up to WP 3.9</li>
 <li>Added color schemes in Theme Options</li>
 <li>This theme does not make your heart bleed</li>
-</ul><h3>
+</ul>
+
+<h3>
 <a name="23---10042014" class="anchor" href="#23---10042014"><span class="octicon octicon-link"></span></a>2.3 - 10.04.2014</h3>
 
 <ul>
 <li>Add a better post format for audio and video posts</li>
 <li>Add Theme Options (Theme Layout)</li>
-</ul><h3>
+</ul>
+
+<h3>
 <a name="108---31032014" class="anchor" href="#108---31032014"><span class="octicon octicon-link"></span></a>1.0.8 - 31.03.2014</h3>
 
 <ul>
 <li>Better display on mobile</li>
 <li>Add an icon on homepage if the post has comments</li>
 <li>This theme is now able to send kittens on the moon</li>
-</ul><h3>
+</ul>
+
+<h3>
 <a name="107---12032014" class="anchor" href="#107---12032014"><span class="octicon octicon-link"></span></a>1.0.7 - 12.03.2014</h3>
 
 <ul>
 <li>Remove old junk css vendor prefixes</li>
 <li>Fix an issue with PHP 5.4 and earlier</li>
 <li>Definitely fix for the custom header</li>
-</ul><h3>
+</ul>
+
+<h3>
 <a name="106---11032014" class="anchor" href="#106---11032014"><span class="octicon octicon-link"></span></a>1.0.6 - 11.03.2014</h3>
 
 <ul>
@@ -137,13 +203,17 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 <li>Minified /css/a-normalize.css</li>
 <li>Fix default and french translation</li>
 <li>Fix the custom_header in search results page.</li>
-</ul><h3>
+</ul>
+
+<h3>
 <a name="105---06032014" class="anchor" href="#105---06032014"><span class="octicon octicon-link"></span></a>1.0.5 - 06.03.2014</h3>
 
 <ul>
 <li>Removed 'accessibility-ready' tag since this theme is not accessibility-ready yet :( I'll work on it in the next update.</li>
 <li>Add an "Updates" section in readme.txt</li>
-</ul><h3>
+</ul>
+
+<h3>
 <a name="104---02032014" class="anchor" href="#104---02032014"><span class="octicon octicon-link"></span></a>1.0.4 - 02.03.2014</h3>
 
 <ul>
@@ -151,7 +221,9 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 <li>Update /images/default-header.jpg</li>
 <li>Update screenshot.png</li>
 <li>Change /css/main.css version</li>
-</ul><h3>
+</ul>
+
+<h3>
 <a name="103---25022014" class="anchor" href="#103---25022014"><span class="octicon octicon-link"></span></a>1.0.3 - 25.02.2014</h3>
 
 <ul>
@@ -159,12 +231,16 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 <li>Remove 'nice search' tweak from /inc/tweaks.php</li>
 <li>Add Icon Font License in readme.txt</li>
 <li>Add defaut header images credits</li>
-</ul><h3>
+</ul>
+
+<h3>
 <a name="102---21022014" class="anchor" href="#102---21022014"><span class="octicon octicon-link"></span></a>1.0.2 - 21.02.2014</h3>
 
 <ul>
 <li>Add /lang and French translation</li>
-</ul><h3>
+</ul>
+
+<h3>
 <a name="101---21022014" class="anchor" href="#101---21022014"><span class="octicon octicon-link"></span></a>1.0.1 - 21.02.2014</h3>
 
 <ul>
@@ -180,7 +256,9 @@ If you do not set a thumbnail, the image that you have set in "custom-header" wi
 <li>Fix credits links</li>
 <li>Add new theme URI</li>
 <li>Add copyrights for kitten images</li>
-</ul><h4>
+</ul>
+
+<h4>
 <a name="100---20022014" class="anchor" href="#100---20022014"><span class="octicon octicon-link"></span></a>1.0.0 - 20.02.2014</h4>
 
 <ul>

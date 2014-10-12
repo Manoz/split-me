@@ -1,6 +1,6 @@
 Theme Name: Split Me
 Theme URI: http://manoz.github.io/split-me/
-Version: 2.5
+Version: 2.5.1
 Requires at least: WP 3.6
 Tested up to: WP 4.0
 
